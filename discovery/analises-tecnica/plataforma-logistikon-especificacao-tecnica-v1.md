@@ -1,6 +1,6 @@
 # Logistikon Academy — Especificação Técnica da Plataforma (v1)
 
-Este documento foi **fatiado em 15 tópicos**; cada arquivo inclui o texto original da seção correspondente e uma seção **Notas de análise técnica** (riscos, dependências, corte de MVP), produzida com revisão arquitetural assistida.
+Este documento foi **fatiado em 15 tópicos**. Cada arquivo inclui: texto base da seção, **detalhamento de features** (IDs, tabelas, critérios de aceite), **diagramas Mermaid** (fluxos, sequência, estados, ER onde aplicável) e **notas de análise técnica**.
 
 ## Onde ler
 

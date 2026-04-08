@@ -53,6 +53,93 @@ Fluxo:
 
 ---
 
+## Features de checkout (detalhe)
+
+| ID | Feature | Implementação | Aceite |
+|----|---------|---------------|--------|
+| CHK-01 | Criar sessão | `line_items` com `price` Stripe ou `price_data` | `client_reference_id` = `order_id` interno |
+| CHK-02 | Metadata | `user_id`, `track_id`, `organization_id?` | Recuperável no webhook |
+| CHK-03 | Success URL | `session_id` query | Página faz polling ou confia no e-mail |
+| CHK-04 | Cancel URL | Retorna ao carrinho/trilha | Pedido fica `pending` ou `cancelled` |
+| CHK-05 | Cupom Stripe ou interno | `allow_promotion_codes` OU cupom pré-aplicado | Validação duplicada no servidor |
+| CHK-06 | Customer | `customer_email` ou Stripe Customer | Facilita reembolso e fatura |
+
+---
+
+## Diagrama — fluxo completo checkout + webhook
+
+```mermaid
+sequenceDiagram
+  participant U as Usuário
+  participant FE as App
+  participant API as Backend
+  participant ST as Stripe
+  U->>FE: Comprar
+  FE->>API: POST create-checkout-session
+  API->>API: Criar order pending
+  API->>ST: checkout.sessions.create
+  ST-->>FE: URL sessão
+  FE->>ST: Redirect checkout
+  U->>ST: Paga
+  ST->>API: Webhook checkout.session.completed
+  API->>API: Idempotência + atualiza order
+  API->>API: Criar enrollment
+  API-->>ST: 200 OK
+  ST-->>U: Redirect success
+```
+
+---
+
+## Diagrama — máquina de estados do pedido
+
+```mermaid
+stateDiagram-v2
+  [*] --> created
+  created --> pending_payment: session criada
+  pending_payment --> paid: webhook sucesso
+  pending_payment --> failed: falha ou expiração
+  pending_payment --> cancelled: usuário cancela
+  paid --> refunded: reembolso
+  failed --> [*]
+  cancelled --> [*]
+  refunded --> [*]
+```
+
+---
+
+## Diagrama — idempotência do webhook
+
+```mermaid
+flowchart TD
+  W[Webhook recebido] --> V{Assinatura válida?}
+  V -->|Não| E400[400]
+  V -->|Sim| I{stripe_event_id já existe?}
+  I -->|Sim| OK[200 ignorar]
+  I -->|Não| P[Processar em transação DB]
+  P --> S{Sucesso?}
+  S -->|Sim| SAVE[Persistir evento + commit]
+  S -->|Não| RET[500 para retry Stripe]
+  SAVE --> OK2[200]
+```
+
+---
+
+## Payloads Stripe relevantes (referência)
+
+- `checkout.session.completed` — disparar liberação de acesso.
+- `charge.refunded` / `payment_intent.payment_failed` — atualizar `order` e política de acesso.
+- Modo **test** vs **live** — variáveis de ambiente separadas; webhook endpoints separados.
+
+---
+
+## Critérios de aceite financeiros
+
+- Replay do mesmo `event.id` **não** cria segunda matrícula.
+- Pedido `paid` sem `enrollment` dispara **alerta** e job de reconciliação.
+- Reembolso total → `enrollment.status` = `suspended` ou removida conforme política.
+
+---
+
 ## Notas de análise técnica
 
 1. **Risco:** Falha ou atraso de webhook vs. retorno do usuário à página de sucesso — precisa de reconciliação (§8.3) e UX que não assuma só o redirect como fonte de verdade.

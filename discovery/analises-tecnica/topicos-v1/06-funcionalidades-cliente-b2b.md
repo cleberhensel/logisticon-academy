@@ -29,6 +29,78 @@
 
 ---
 
+## Features B2B detalhadas
+
+### Compra e pedido (B2B-ORD)
+
+| ID | Feature | Comportamento | Aceite |
+|----|---------|---------------|--------|
+| B2B-01 | SKU pacote | `product` = “N assentos × trilha X” | Preço total = N × unitário ou preço fechado configurável |
+| B2B-02 | Checkout Stripe | Mesmo fluxo B2C ou sessão com `metadata` org | Webhook cria `seat_pool` com N licenças |
+| B2B-03 | NF/recibo | Link PDF Stripe + número interno | Armazenar `stripe_invoice_id` se aplicável |
+| B2B-04 | Histórico | Lista pedidos da org | Filtro por status e data |
+
+### Convites e assentos (B2B-SEAT)
+
+| ID | Feature | Comportamento | Aceite |
+|----|---------|---------------|--------|
+| B2B-10 | Convidar | E-mail + trilha + assento disponível | Consome 1 licença ao aceitar |
+| B2B-11 | Estado convite | `pending`, `accepted`, `expired`, `revoked` | TTL configurável (ex.: 7 dias) |
+| B2B-12 | Aceitar | Usuário cria conta ou loga | Vínculo `user` ↔ `organization` |
+| B2B-13 | Revogar | Libera assento se ainda não iniciou trilha | Regra explícita se já progrediu |
+| B2B-14 | Reatribuir | Mover assento entre e-mails | Opcional Fase 3 |
+
+### Relatórios (B2B-REP)
+
+| ID | Feature | Aceite |
+|----|---------|--------|
+| B2B-20 | Visão por colaborador | Colunas: nome, e-mail, trilha, %, status, cert |
+| B2B-21 | Export CSV | UTF-8, mesmas colunas |
+| B2B-22 | Agregados | % concluídos na org | Dashboard simples |
+
+---
+
+## Diagrama — ciclo de vida do assento
+
+```mermaid
+stateDiagram-v2
+  [*] --> available: compra paga
+  available --> reserved: convite enviado
+  reserved --> consumed: colaborador aceita
+  reserved --> available: convite expira ou revogado
+  consumed --> active: matrícula criada
+  active --> completed: trilha finalizada
+  consumed --> revoked: regra administrativa
+```
+
+---
+
+## Diagrama — sequência convite e matrícula
+
+```mermaid
+sequenceDiagram
+  participant B as Buyer
+  participant API as API
+  participant M as E-mail
+  participant C as Colaborador
+  B->>API: POST convite email+trilha
+  API->>M: Enviar link mágico
+  C->>API: Aceita convite token
+  API->>API: Criar user se necessário
+  API->>API: Criar enrollment + consumir assento
+  API-->>C: Redirect área aluno
+```
+
+---
+
+## Regras de negócio recomendadas (documentar no produto)
+
+- **Um assento** = uma matrícula ativa em uma trilha específica (MVP simples).
+- **Revogação pós-progresso:** ou bloquear, ou apenas “desativa novas aulas” mantendo histórico — decisão de compliance.
+- **Buyer** não pode ver conteúdo das aulas dos colaboradores (privacidade); só **métricas**.
+
+---
+
 ## Notas de análise técnica
 
 1. **Risco:** Modelo de “assentos” por trilha exige regras claras (transferência, expiração, trilha trocada no meio do contrato) — ambiguidade vira bugs de cobrança e de acesso.

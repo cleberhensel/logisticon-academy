@@ -16,6 +16,93 @@
 
 ---
 
+## Expansão do checklist com casos de teste (features)
+
+### CT-01 — Comprar e iniciar < 5 min
+
+| Passo | Ação esperada |
+|-------|----------------|
+| 1 | Visitante abre trilha publicada |
+| 2 | Cadastro em < 60s |
+| 3 | Checkout Stripe test mode |
+| 4 | Retorno success + matrícula visível |
+| 5 | Primeira aula abre sem erro |
+
+### CT-02 — Matrícula sem duplicidade
+
+| Cenário | Resultado |
+|---------|-----------|
+| Webhook duplicado (replay) | Uma matrícula |
+| Usuário clica comprar 2x rápido | Um `order` pendente ou bloqueio claro |
+| Success page + webhook atrasado | Reconciliação cria matrícula em até X min |
+
+### CT-03 — Publicar trilha sem dev
+
+| Verificação | |
+|-------------|--|
+| Instrutor cria módulos e aulas | OK |
+| Define quiz mínimo | OK |
+| Botão publicar | Catálogo atualiza |
+| Sem preço Stripe | Aviso “não disponível para venda” |
+
+### CT-04 — Reembolso
+
+| Tipo | Pedido | Enrollment | Certificado |
+|------|--------|------------|-------------|
+| Total | `refunded` | suspenso/removido | revogado se existir |
+| Parcial | anotação | conforme política | — |
+
+### CT-05 — Certificado
+
+| Caso | Deve bloquear emissão |
+|------|------------------------|
+| Aula não concluída | Sim |
+| Quiz abaixo da nota | Sim |
+| Projeto pendente correção | Sim |
+
+### CT-06 — B2B (quando Fase 3 ativa)
+
+| Verificação | |
+|-------------|--|
+| Buyer vê só sua org | Sim |
+| CSV exporta colaboradores | Sim |
+| Colaborador não vê pedidos | Sim |
+
+---
+
+## Diagrama — matriz teste × ambiente
+
+```mermaid
+flowchart TB
+  subgraph Unit["Testes unitários"]
+    U1[Regras certificado]
+    U2[Cupom]
+  end
+  subgraph Int["Integração"]
+    I1[Webhook Stripe mock]
+    I2[DB transactions]
+  end
+  subgraph E2E["E2E staging"]
+    E1[Fluxo A completo]
+    E2[Reembolso]
+  end
+  Unit --> Int
+  Int --> E2E
+```
+
+---
+
+## Diagrama — gate de release
+
+```mermaid
+flowchart LR
+  T[Testes passam] --> S[Staging OK]
+  S --> R[Checklist produto]
+  R --> G[Go live]
+```
+
+---
+
 ## Notas de análise técnica
 
 1. **Risco:** Itens misturam jornada B2C, integridade de dados, backoffice, financeiro e **cliente corporativo**; o último só é verificável quando o escopo B2B estiver entregue — risco de “checklist verde” com MVP incompleto.

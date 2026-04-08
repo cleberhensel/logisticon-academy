@@ -54,6 +54,85 @@
 
 ---
 
+## Mapa de fluxos × features envolvidas
+
+| Fluxo | Entidades / serviços principais | Feature crítica |
+|-------|----------------------------------|-----------------|
+| A | `orders`, Stripe, `enrollments`, `lessons`, `quizzes`, `certificates` | Idempotência webhook |
+| B | `organizations`, `seats`, convites, `enrollments` | Escopo tenant |
+| C | `tracks`, `modules`, `products`, `prices` | Publicação + SKU |
+| D | `stripe_events`, `orders`, `enrollments`, `audit_logs` | Transação atômica |
+| E | `support_tickets`, e-mail | SLA opcional MVP |
+
+---
+
+## Diagrama — visão geral A + D (B2C)
+
+```mermaid
+flowchart TB
+  subgraph A["Fluxo A Aluno"]
+    A1[Landing] --> A2[Auth]
+    A2 --> A3[Checkout]
+    A3 --> A4[Stripe]
+    A4 --> A5[Success]
+    A5 --> A6[Estudar]
+    A6 --> A7[Certificado]
+  end
+  subgraph D["Fluxo D Webhook"]
+    D1[Stripe webhook] --> D2[Validar]
+    D2 --> D3[Order paid]
+    D3 --> D4[Enrollment]
+  end
+  A4 -.->|assíncrono| D1
+  D4 -.->|habilita| A6
+```
+
+---
+
+## Diagrama — swimlane backoffice conteúdo + comercial (C)
+
+```mermaid
+flowchart LR
+  subgraph Inst["Instrutor"]
+    I1[Criar trilha]
+    I2[Publicar]
+  end
+  subgraph Com["Comercial ou Admin"]
+    C1[Vincular Price Stripe]
+    C2[Ativar no catálogo]
+  end
+  I1 --> I2
+  I2 --> C1
+  C1 --> C2
+```
+
+---
+
+## Diagrama — fluxo E suporte (MVP)
+
+```mermaid
+stateDiagram-v2
+  [*] --> open: aluno abre
+  open --> pending: triagem
+  pending --> closed: resolvido
+  pending --> escalated: financeiro ou conteúdo
+  escalated --> closed
+  closed --> [*]
+```
+
+---
+
+## Pontos de integração manual (documentar no runbook)
+
+| Passo | Se manual | Risco |
+|-------|-----------|-------|
+| C.4 Habilitar preço | Planilha + Stripe Dashboard | Catálogo sem preço |
+| Reembolso edge | Operação decide exceção | Acesso inconsistente |
+
+**Feature futura:** tela única “Publicar e precificar” que cria/atualiza `price` no Stripe via API.
+
+---
+
 ## Notas de análise técnica
 
 1. **Risco:** Fluxos A–E escondem handoffs (ex.: “operação comercial habilita preço/SKU” no C) — se for manual, documentar SLA interno; se for sistema, vira feature extra não listada no detalhe.
