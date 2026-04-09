@@ -5,7 +5,7 @@
 | **DEV** | DEV-021 |
 | **Prioridade** | P1 |
 | **Spec** | [SPEC-04-area-do-aluno.md](../specs/SPEC-04-area-do-aluno.md) |
-| **US** | [US-E05-007](../user-stories/E05-avaliacao-certificados/US-E05-007.md) (política; perspetiva configuração no BO em E06/SPEC-06) |
+| **US** | [US-E05-007](../user-stories/E05-avaliacao-certificados/US-E05-007/US-E05-007.md) (política; perspetiva configuração no BO em E06/SPEC-06) |
 | **Épico** | E04 |
 
 ## Objetivo

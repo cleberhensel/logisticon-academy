@@ -5,7 +5,7 @@
 | **DEV** | DEV-018 |
 | **Prioridade** | P0 |
 | **Spec** | [SPEC-04-area-do-aluno.md](../specs/SPEC-04-area-do-aluno.md) |
-| **US** | [US-E04-001](../user-stories/E04-area-do-aluno/US-E04-001.md) |
+| **US** | [US-E04-001](../user-stories/E04-area-do-aluno/US-E04-001/US-E04-001.md) |
 | **Épico** | E04 |
 
 ## Objetivo

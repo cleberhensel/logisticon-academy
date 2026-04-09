@@ -5,7 +5,7 @@
 | **DEV** | DEV-001 |
 | **Prioridade** | P0 |
 | **Spec** | [SPEC-01-identidade-acesso.md](../specs/SPEC-01-identidade-acesso.md) |
-| **US** | [US-E01-001](../user-stories/E01-identidade-acesso/US-E01-001.md) |
+| **US** | [US-E01-001](../user-stories/E01-identidade-acesso/US-E01-001/US-E01-001.md) |
 | **Épico** | E01 |
 
 ## Objetivo

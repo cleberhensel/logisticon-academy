@@ -5,7 +5,7 @@
 | **DEV** | DEV-012 |
 | **Prioridade** | P0 |
 | **Spec** | [SPEC-03-stripe-pagamentos.md](../specs/SPEC-03-stripe-pagamentos.md) |
-| **US** | [US-E03-001](../user-stories/E03-stripe-pagamentos/US-E03-001.md) · [US-E03-008](../user-stories/E03-stripe-pagamentos/US-E03-008.md) (UX pós-checkout) |
+| **US** | [US-E03-001](../user-stories/E03-stripe-pagamentos/US-E03-001/US-E03-001.md) · [US-E03-008](../user-stories/E03-stripe-pagamentos/US-E03-008/US-E03-008.md) (UX pós-checkout) |
 | **Épico** | E03 |
 
 ## Objetivo

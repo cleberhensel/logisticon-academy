@@ -2,7 +2,7 @@
 
 **Objetivo de produto:** após matrícula, consumir aulas, persistir **progresso** e retomar de onde parou.
 
-**Artefactos de plano:** [SPEC-04](../specs/SPEC-04-area-do-aluno.md) · [User stories (E04)](../user-stories/E04-area-do-aluno/) · Tasks [TSK-DEV-018](../tasks/TSK-DEV-018.md) … [TSK-DEV-021](../tasks/TSK-DEV-021.md) · *Nota:* [US-E05-007](../user-stories/E05-avaliacao-certificados/US-E05-007.md) (política de conclusão) referencia **DEV-021** neste épico.
+**Artefactos de plano:** [SPEC-04](../specs/SPEC-04-area-do-aluno.md) · [User stories (E04)](../user-stories/E04-area-do-aluno/) · Tasks [TSK-DEV-018](../tasks/TSK-DEV-018.md) … [TSK-DEV-021](../tasks/TSK-DEV-021.md) · *Nota:* [US-E05-007](../user-stories/E05-avaliacao-certificados/US-E05-007/US-E05-007.md) (política de conclusão) referencia **DEV-021** neste épico.
 
 ---
 

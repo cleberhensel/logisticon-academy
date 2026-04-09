@@ -24,7 +24,7 @@ Especificações que consolidam discovery e épicos em documentos por tema. Regi
 | [SPEC-07](SPEC-07-b2b-organizacoes.md) | E07 | TSK-DEV-044 … **046** |
 | [SPEC-08](SPEC-08-plataforma-notificacoes-lgpd.md) | E08 | TSK-DEV-047 … **049** |
 
-**Nota:** **DEV-021** (LRN-04) pertence ao épico **E04**; a user story [US-E05-007](../user-stories/E05-avaliacao-certificados/US-E05-007.md) permanece na pasta E05 por foco na política de conclusão (configuração no BO + impacto na avaliação).
+**Nota:** **DEV-021** (LRN-04) pertence ao épico **E04**; a user story [US-E05-007](../user-stories/E05-avaliacao-certificados/US-E05-007/US-E05-007.md) permanece na pasta E05 por foco na política de conclusão (configuração no BO + impacto na avaliação).
 
 ## Índice de ficheiros
 

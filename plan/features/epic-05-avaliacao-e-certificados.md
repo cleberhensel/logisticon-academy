@@ -2,7 +2,7 @@
 
 **Objetivo de produto:** validar aprendizagem com **quiz**, opcionalmente **projeto**, e emitir **certificado** com validação pública.
 
-**Artefactos de plano:** [SPEC-05](../specs/SPEC-05-avaliacao-certificados.md) · [User stories (E05)](../user-stories/E05-avaliacao-certificados/) · Tasks [TSK-DEV-022](../tasks/TSK-DEV-022.md) … [TSK-DEV-027](../tasks/TSK-DEV-027.md) · *Nota:* **DEV-021** (conclusão manual) está no [épico E04](epic-04-area-do-aluno.md); ver [US-E05-007](../user-stories/E05-avaliacao-certificados/US-E05-007.md).
+**Artefactos de plano:** [SPEC-05](../specs/SPEC-05-avaliacao-certificados.md) · [User stories (E05)](../user-stories/E05-avaliacao-certificados/) · Tasks [TSK-DEV-022](../tasks/TSK-DEV-022.md) … [TSK-DEV-027](../tasks/TSK-DEV-027.md) · *Nota:* **DEV-021** (conclusão manual) está no [épico E04](epic-04-area-do-aluno.md); ver [US-E05-007](../user-stories/E05-avaliacao-certificados/US-E05-007/US-E05-007.md).
 
 ---
 

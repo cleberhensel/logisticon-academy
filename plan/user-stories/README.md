@@ -1,6 +1,6 @@
 # User stories — Logistikon Academy
 
-Histórias em formato **Given / When / Then**, organizadas por **épico** (pastas `E01-…` a `E08-…`). Cada US liga a **Spec(s)** e **Task(s)** no cabeçalho.
+Histórias em formato **Given / When / Then**, organizadas por **épico** (pastas `E01-…` a `E08-…`) e por **US individual**.
 
 ## Convenções de ID
 
@@ -15,20 +15,25 @@ Histórias em formato **Given / When / Then**, organizadas por **épico** (pasta
 | **US-E07-*** | B2B: org, assentos, painel buyer |
 | **US-E08-*** | E-mail transacional, health, LGPD |
 
-**Links relativos:** a partir de cada pasta de épico, usar `../../specs/` e `../../tasks/` para ficheiros em `plan/specs` e `plan/tasks`.
+**Estrutura por US:** cada US fica em `Ejj-*/US-Ejj-NNN/` e contém:
+
+- ficheiro principal `US-Ejj-NNN.md`;
+- subpasta `tasks/` com atalhos para as tasks relacionadas.
+
+**Links relativos:** a partir da pasta da US, usar `../../../specs/` e `../../../tasks/`.
 
 ## Pastas
 
 | Pasta | Conteúdo |
 |-------|----------|
-| [E01-identidade-acesso/](E01-identidade-acesso/) | US-E01-001 … US-E01-007 |
-| [E02-catalogo-pedidos/](E02-catalogo-pedidos/) | US-E02-001 … US-E02-005 |
-| [E03-stripe-pagamentos/](E03-stripe-pagamentos/) | US-E03-001 … US-E03-008 |
-| [E04-area-do-aluno/](E04-area-do-aluno/) | US-E04-001 … US-E04-005 |
-| [E05-avaliacao-certificados/](E05-avaliacao-certificados/) | US-E05-001 … US-E05-007 |
-| [E06-backoffice/](E06-backoffice/) | US-E06-001 … US-E06-014 |
-| [E07-b2b/](E07-b2b/) | US-E07-001 … US-E07-004 |
-| [E08-plataforma/](E08-plataforma/) | US-E08-001 … US-E08-004 |
+| [E01-identidade-acesso/](E01-identidade-acesso/) | `US-E01-001/` … `US-E01-007/` |
+| [E02-catalogo-pedidos/](E02-catalogo-pedidos/) | `US-E02-001/` … `US-E02-005/` |
+| [E03-stripe-pagamentos/](E03-stripe-pagamentos/) | `US-E03-001/` … `US-E03-008/` |
+| [E04-area-do-aluno/](E04-area-do-aluno/) | `US-E04-001/` … `US-E04-005/` |
+| [E05-avaliacao-certificados/](E05-avaliacao-certificados/) | `US-E05-001/` … `US-E05-007/` |
+| [E06-backoffice/](E06-backoffice/) | `US-E06-001/` … `US-E06-014/` |
+| [E07-b2b/](E07-b2b/) | `US-E07-001/` … `US-E07-004/` |
+| [E08-plataforma/](E08-plataforma/) | `US-E08-001/` … `US-E08-004/` |
 
 ## Casos com mais do que uma task ou US partilhada
 

@@ -5,7 +5,7 @@
 | **DEV** | DEV-044 |
 | **Prioridade** | P2 |
 | **Spec** | [SPEC-07](../specs/SPEC-07-b2b-organizacoes.md) |
-| **US** | [US-E07-001](../user-stories/E07-b2b/US-E07-001.md) |
+| **US** | [US-E07-001](../user-stories/E07-b2b/US-E07-001/US-E07-001.md) |
 | **Épico** | E07 |
 
 ## Objetivo

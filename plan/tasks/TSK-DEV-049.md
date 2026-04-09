@@ -5,7 +5,7 @@
 | **DEV** | DEV-049 |
 | **Prioridade** | P1 |
 | **Spec** | [SPEC-08](../specs/SPEC-08-plataforma-notificacoes-lgpd.md) |
-| **US** | [US-E08-003](../user-stories/E08-plataforma/US-E08-003.md) |
+| **US** | [US-E08-003](../user-stories/E08-plataforma/US-E08-003/US-E08-003.md) |
 | **Épico** | E08 |
 
 ## Objetivo

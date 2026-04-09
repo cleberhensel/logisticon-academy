@@ -5,7 +5,7 @@
 | **DEV** | DEV-011 |
 | **Prioridade** | P0 |
 | **Spec** | [SPEC-02-catalogo-pedidos.md](../specs/SPEC-02-catalogo-pedidos.md) |
-| **US** | [US-E02-005](../user-stories/E02-catalogo-pedidos/US-E02-005.md) |
+| **US** | [US-E02-005](../user-stories/E02-catalogo-pedidos/US-E02-005/US-E02-005.md) |
 | **Épico** | E02 |
 
 ## Objetivo

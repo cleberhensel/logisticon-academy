@@ -5,7 +5,7 @@
 | **DEV** | DEV-022 |
 | **Prioridade** | P0 |
 | **Spec** | [SPEC-05-avaliacao-certificados.md](../specs/SPEC-05-avaliacao-certificados.md) |
-| **US** | [US-E05-001](../user-stories/E05-avaliacao-certificados/US-E05-001.md) |
+| **US** | [US-E05-001](../user-stories/E05-avaliacao-certificados/US-E05-001/US-E05-001.md) |
 | **Épico** | E05 |
 
 ## Objetivo

@@ -5,7 +5,7 @@
 | **DEV** | DEV-030 |
 | **Prioridade** | P0 |
 | **Spec** | [SPEC-06-backoffice.md](../specs/SPEC-06-backoffice.md) |
-| **US** | [US-E06-003](../user-stories/E06-backoffice/US-E06-003.md) |
+| **US** | [US-E06-003](../user-stories/E06-backoffice/US-E06-003/US-E06-003.md) |
 | **Épico** | E06 |
 
 ## Objetivo

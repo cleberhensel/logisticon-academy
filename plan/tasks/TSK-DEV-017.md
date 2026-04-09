@@ -5,7 +5,7 @@
 | **DEV** | DEV-017 |
 | **Prioridade** | P0 |
 | **Spec** | [SPEC-03-stripe-pagamentos.md](../specs/SPEC-03-stripe-pagamentos.md) |
-| **US** | [US-E03-006](../user-stories/E03-stripe-pagamentos/US-E03-006.md) |
+| **US** | [US-E03-006](../user-stories/E03-stripe-pagamentos/US-E03-006/US-E03-006.md) |
 | **Épico** | E03 |
 
 ## Objetivo
