@@ -2,7 +2,7 @@
 
 **Objetivo de produto:** expor trilhas vendáveis, calcular elegibilidade e criar **pedido** antes do pagamento.
 
-**Artefactos de plano:** [SPEC-02](../specs/SPEC-02-catalogo-pedidos.md) · [User stories (E02)](../user-stories/E02-catalogo-pedidos/) · Tasks [TSK-DEV-008](../tasks/TSK-DEV-008.md) … [TSK-DEV-011](../tasks/TSK-DEV-011.md)
+**Artefactos de plano:** [SPEC-02](../specs/SPEC-02-catalogo-pedidos.md) · [User stories (E02)](../user-stories/E02-catalogo-pedidos/) · Tasks [TSK-DEV-008](../user-stories/E02-catalogo-pedidos/US-E02-001/tasks/TSK-DEV-008.md) … [TSK-DEV-011](../user-stories/E02-catalogo-pedidos/US-E02-005/tasks/TSK-DEV-011.md)
 
 ---
 

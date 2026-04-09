@@ -18,9 +18,9 @@ Histórias em formato **Given / When / Then**, organizadas por **épico** (pasta
 **Estrutura por US:** cada US fica em `Ejj-*/US-Ejj-NNN/` e contém:
 
 - ficheiro principal `US-Ejj-NNN.md`;
-- subpasta `tasks/` com atalhos para as tasks relacionadas.
+- subpasta `tasks/` com os **ficheiros completos** `TSK-DEV-NNN.md` dessa US (a mesma task pode estar duplicada noutra US quando é partilhada — ex.: **TSK-DEV-012** em `US-E03-001` e `US-E03-008`).
 
-**Links relativos:** a partir da pasta da US, usar `../../../specs/` e `../../../tasks/`.
+**Links relativos:** a partir da pasta da US (ficheiro `US-*.md`), usar `../../../specs/`; links para a task principal usam `./tasks/TSK-DEV-NNN.md`.
 
 ## Pastas
 
@@ -45,5 +45,7 @@ Histórias em formato **Given / When / Then**, organizadas por **épico** (pasta
 
 ## Referência
 
-- Tasks: [plan/tasks/README.md](../tasks/README.md)
+- **Arquitetura e stack:** [plan/architecture/stack-e-padroes.md](../architecture/stack-e-padroes.md)
+- **Geração/atualização em lote das tasks:** `scripts/enrich_plan_tasks.py` na raiz do repositório (conteúdo canónico por `DEV-NNN` no script).
+- Índice por épico e DEV: [plan/features/registro-de-features.md](../features/registro-de-features.md)
 - Specs: [plan/specs/README.md](../specs/README.md)

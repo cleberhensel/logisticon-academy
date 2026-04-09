@@ -2,7 +2,7 @@
 
 **Objetivo de produto:** permitir que um **buyer** compre pacotes de vagas, convide colaboradores e acompanhe progresso — **fase posterior** ao MVP B2C (prioridade P2 no registro).
 
-**Artefactos de plano:** [SPEC-07](../specs/SPEC-07-b2b-organizacoes.md) · [User stories (E07)](../user-stories/E07-b2b/) · Tasks [TSK-DEV-044](../tasks/TSK-DEV-044.md) … [TSK-DEV-046](../tasks/TSK-DEV-046.md)
+**Artefactos de plano:** [SPEC-07](../specs/SPEC-07-b2b-organizacoes.md) · [User stories (E07)](../user-stories/E07-b2b/) · Tasks [TSK-DEV-044](../user-stories/E07-b2b/US-E07-001/tasks/TSK-DEV-044.md) … [TSK-DEV-046](../user-stories/E07-b2b/US-E07-003/tasks/TSK-DEV-046.md)
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Objetivo de produto:** cobrar com **Stripe Checkout**, confirmar pagamento por **webhook idempotente** e manter **pedidos** consistentes com **matrículas**.
 
-**Artefactos de plano:** [SPEC-03](../specs/SPEC-03-stripe-pagamentos.md) · [User stories (E03)](../user-stories/E03-stripe-pagamentos/) · Tasks [TSK-DEV-012](../tasks/TSK-DEV-012.md) … [TSK-DEV-017](../tasks/TSK-DEV-017.md) e [TSK-DEV-043](../tasks/TSK-DEV-043.md) (reconciliação)
+**Artefactos de plano:** [SPEC-03](../specs/SPEC-03-stripe-pagamentos.md) · [User stories (E03)](../user-stories/E03-stripe-pagamentos/) · Tasks [TSK-DEV-012](../user-stories/E03-stripe-pagamentos/US-E03-001/tasks/TSK-DEV-012.md) … [TSK-DEV-017](../user-stories/E03-stripe-pagamentos/US-E03-006/tasks/TSK-DEV-017.md) e [TSK-DEV-043](../user-stories/E03-stripe-pagamentos/US-E03-007/tasks/TSK-DEV-043.md) (reconciliação)
 
 ---
 

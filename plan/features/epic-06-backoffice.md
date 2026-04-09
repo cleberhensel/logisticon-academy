@@ -2,7 +2,7 @@
 
 **Objetivo de produto:** operar conteúdo, pessoas, financeiro, certificados e suporte **sem deploy** de código.
 
-**Artefactos de plano:** [SPEC-06](../specs/SPEC-06-backoffice.md) · [User stories (E06)](../user-stories/E06-backoffice/) · Tasks [TSK-DEV-028](../tasks/TSK-DEV-028.md) … [TSK-DEV-042](../tasks/TSK-DEV-042.md)
+**Artefactos de plano:** [SPEC-06](../specs/SPEC-06-backoffice.md) · [User stories (E06)](../user-stories/E06-backoffice/) · Tasks [TSK-DEV-028](../user-stories/E06-backoffice/US-E06-001/tasks/TSK-DEV-028.md) … [TSK-DEV-042](../user-stories/E06-backoffice/US-E06-014/tasks/TSK-DEV-042.md)
 
 ---
 

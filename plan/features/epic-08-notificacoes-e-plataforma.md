@@ -2,7 +2,7 @@
 
 **Objetivo de produto:** comunicação transacional, saúde do serviço e requisitos mínimos de **LGPD** e observabilidade leve.
 
-**Artefactos de plano:** [SPEC-08](../specs/SPEC-08-plataforma-notificacoes-lgpd.md) · [User stories (E08)](../user-stories/E08-plataforma/) · Tasks [TSK-DEV-047](../tasks/TSK-DEV-047.md) … [TSK-DEV-049](../tasks/TSK-DEV-049.md)
+**Artefactos de plano:** [SPEC-08](../specs/SPEC-08-plataforma-notificacoes-lgpd.md) · [User stories (E08)](../user-stories/E08-plataforma/) · Tasks [TSK-DEV-047](../user-stories/E08-plataforma/US-E08-001/tasks/TSK-DEV-047.md) … [TSK-DEV-049](../user-stories/E08-plataforma/US-E08-003/tasks/TSK-DEV-049.md)
 
 ---
 

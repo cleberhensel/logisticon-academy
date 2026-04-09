@@ -2,7 +2,7 @@
 
 **Objetivo de produto:** autenticar usuários, emitir sessão segura e aplicar **RBAC** em toda a API, com base para **multi-tenant** (B2B).
 
-**Artefactos de plano:** [SPEC-01](../specs/SPEC-01-identidade-acesso.md) · [User stories (E01)](../user-stories/E01-identidade-acesso/) · Tasks [TSK-DEV-001](../tasks/TSK-DEV-001.md) … [TSK-DEV-007](../tasks/TSK-DEV-007.md)
+**Artefactos de plano:** [SPEC-01](../specs/SPEC-01-identidade-acesso.md) · [User stories (E01)](../user-stories/E01-identidade-acesso/) · Tasks [TSK-DEV-001](../user-stories/E01-identidade-acesso/US-E01-001/tasks/TSK-DEV-001.md) … [TSK-DEV-007](../user-stories/E01-identidade-acesso/US-E01-007/tasks/TSK-DEV-007.md) (ficheiros em cada `US-*/tasks/`)
 
 ---
 

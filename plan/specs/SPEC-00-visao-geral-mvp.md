@@ -33,7 +33,7 @@
 | Registro flat DEV | `plan/features/registro-de-features.md` |
 | Specs técnicas | `plan/specs/SPEC-*.md` |
 | User stories | `plan/user-stories/` |
-| Tasks | `plan/tasks/` |
+| Tasks (`TSK-DEV-*`) | `plan/user-stories/<épico>/<US>/tasks/` |
 | Discovery | `discovery/analises-tecnica/plataforma-logistikon-especificacao-tecnica-v1.md`, `discovery/analises-tecnica/topicos-v1/` |
 
 ---

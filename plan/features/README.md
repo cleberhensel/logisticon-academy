@@ -37,9 +37,9 @@ Tabela única com todos os IDs: [registro-de-features.md](registro-de-features.m
 
 Cada épico inclui no topo um bloco **Artefactos de plano** com ligações diretas. Índices consolidados:
 
+- [Arquitetura / stack](../architecture/stack-e-padroes.md) — referência única para implementação (camadas, ports, Stripe, Mailchimp, Neon, VPS)
 - [Specs (README)](../specs/README.md)
-- [User stories (README)](../user-stories/README.md)
-- [Tasks (README)](../tasks/README.md)
+- [User stories (README)](../user-stories/README.md) — tasks em `US-*/tasks/`
 
 ## Formato de cada feature (nos épicos)
 

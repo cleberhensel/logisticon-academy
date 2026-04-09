@@ -2,12 +2,14 @@
 
 Especificações que consolidam discovery e épicos em documentos por tema. Registro canónico de itens de engenharia: `plan/features/registro-de-features.md`.
 
+**Stack e padrões (Clean Arch, Angular+Carbon, Express+Prisma, Neon, Hostinger, Mailchimp, Stripe):** [plan/architecture/stack-e-padroes.md](../architecture/stack-e-padroes.md).
+
 ## Convenções de ID
 
 | Prefixo | Uso |
 |---------|-----|
 | **SPEC-NN** | Spec temática (arquivo único) |
-| **DEV-NNN** | Feature de engenharia (1:1 com `TSK-DEV-NNN`) |
+| **DEV-NNN** | Feature de engenharia; detalhe em `TSK-DEV-NNN` sob `plan/user-stories/.../US-*/tasks/` |
 | **E01…E08** | Épico (pastas em `plan/user-stories/`) |
 
 ## Matriz Spec ↔ épico ↔ tasks
@@ -23,6 +25,8 @@ Especificações que consolidam discovery e épicos em documentos por tema. Regi
 | [SPEC-06](SPEC-06-backoffice.md) | E06 | TSK-DEV-028 … **042** |
 | [SPEC-07](SPEC-07-b2b-organizacoes.md) | E07 | TSK-DEV-044 … **046** |
 | [SPEC-08](SPEC-08-plataforma-notificacoes-lgpd.md) | E08 | TSK-DEV-047 … **049** |
+
+Os ficheiros `TSK-DEV-*.md` estão nas pastas `tasks/` sob cada user story correspondente em [user-stories/](../user-stories/README.md).
 
 **Nota:** **DEV-021** (LRN-04) pertence ao épico **E04**; a user story [US-E05-007](../user-stories/E05-avaliacao-certificados/US-E05-007/US-E05-007.md) permanece na pasta E05 por foco na política de conclusão (configuração no BO + impacto na avaliação).
 
