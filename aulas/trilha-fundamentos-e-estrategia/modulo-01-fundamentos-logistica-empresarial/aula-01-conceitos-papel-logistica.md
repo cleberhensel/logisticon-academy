@@ -1,12 +1,5 @@
 # Conceitos e papel da logística na empresa — da promessa ao custo que ninguém vê
 
-**Trilha:** Fundamentos e estratégia · **Módulo:** Fundamentos da Logística Empresarial  
-**Público / nível:** Iniciante a intermediário em negócios — útil tanto para quem está na operação quanto para quem vem de vendas, finanças ou produto e precisa “falar a mesma língua” da cadeia.  
-**Duração sugerida:** entre **duas** e **três horas** de estudo sério se você fizer os exercícios com calma, reler os trechos teóricos e desenhar os diagramas no papel; se for uma primeira leitura exploratória, cerca de **noventa minutos**.  
-**Resultado de aprendizagem:** ao terminar este capítulo, você deve conseguir **explicar com precisão** o que é *logistics management* e o que é *supply chain management* segundo o vocabulário internacional (CSCMP), **posicionar** a logística nas interfaces com vendas, operações e finanças, **narrar** trade-offs entre custo total, nível de serviço e capital em estoque, e **ler** a cadeia de valor de Porter com o tipo de atenção que um diretor de logística usa quando discute estratégia — ou seja, vendo onde há custo inevitável e onde há espaço para diferenciação.
-
----
-
 Há um tipo de frase que aparece em slides de marketing e depois “cai” no chão da empresa como se fosse problema exclusivo de expedição: *“Entrega em vinte e quatro horas em todo o país.”* Em geral, quem escreveu a frase estava pensando em **conversão** e em **branding**; quem ouviu no corredor foi o gerente de armazém, que imediatamente imagina **mais caminhões**, **mais horas de picking** e **mais stress* — e ninguém, ainda, falou em **malha**, em **estoque de posição**, em **forecast**, em **capacidade de doca** ou em **custo de capital**. Esta desconexão não é acidente: ela nasce de uma confusão antiga entre **promessa** (o que o mercado ouve) e **sistema físico-informacional-financeiro** (o que a empresa realmente consegue sustentar de forma repetível). A logística empresarial, quando bem ensinada, é justamente a disciplina que **traduz promessa em restrições e restrições em decisões** — sem mágica e sem heroísmo solitário na doca.
 
 Ao longo deste texto vamos usar, de forma recorrente, uma empresa fictícia chamada **TechLar** (e-commerce de utilidades domésticas, um centro de distribuição no interior, forte sazonalidade de campanhas). Ela não existe para ser memorizada; existe para dar **textura** aos conceitos. Sempre que você ler “a TechLar fez X”, tente substituir mentalmente pela empresa que você conhece: o mecanismo cognitivo é o mesmo.

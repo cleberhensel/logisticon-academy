@@ -1,12 +1,5 @@
 # Previsão de demanda e métodos básicos — o número que não é promessa, é hipótese com prazo de validade
 
-**Trilha:** Fundamentos e estratégia · **Módulo:** Planejamento de demanda e S&OP  
-**Público / nível:** Intermediário — convém estar à vontade com médias, percentuais e leitura de séries temporais simples; não é necessário dominar inferência estatística, mas é útil não ter medo de uma planilha.  
-**Duração sugerida:** entre **duas horas e meia** e **três horas** se você refizer os cálculos à mão, plotar a série e escrever o relatório de uma página que sugeri no final; uma primeira leitura pode levar **noventa minutos**, mas aí você estará só na superfície.  
-**Resultado de aprendizagem:** ao terminar, você deve conseguir **separar** com clareza demanda **independente** e **dependente**; **explicar** por que *forecast* é melhor pensado como **distribuição de erro + política de revisão** do que como “número certo”; **aplicar** métodos simples (ingênuo, média móvel, intuição de suavização exponencial) e **interpretar** MAD, MAPE e WMAPE sem cair nas armadilhas do denominador; **escolher** granularidade (SKU, família, região) e horizonte alinhados ao uso — operacional, tático ou financeiro; e **nomear** distorções típicas de dados (promoção, ruptura, mix) que corrompem o aprendizado do modelo.
-
----
-
 Há empresas em que o forecast virou **instrumento de culpa**: na segunda-feira, alguém aponta para uma célula e pergunta “por que errou?”, como se erro fosse **vício** e não **propriedade** do problema. A tradição acadêmica e profissional séria — a que você encontra em *Forecasting: Principles and Practice*, de Hyndman e Athanasopoulos (OTexts, https://otexts.com/fpp3/) — trata previsão com a mesma sobriedade com que trata **controle de qualidade**: define método, estima erro, documenta suposições, revisa. Esta aula não substitui o livro; dá **linguagem** para você conversar com operações, finanças e comercial sem confundir **precisão estética** com **decisão robusta**.
 
 Usaremos de novo a **TechLar** (e-commerce fictício de utilidades, CD no interior, campanhas agressivas). Sempre que aparecer “TechLar”, pense na empresa que você conhece: o mecanismo é o mesmo.

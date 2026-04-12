@@ -1,12 +1,5 @@
 # S&OP e alinhamento — do calendário de reuniões ao plano único que finanças reconhece
 
-**Trilha:** Fundamentos e estratégia · **Módulo:** Planejamento de demanda e S&OP  
-**Público / nível:** Avançado em **organização** — pressupõe entender forecast em linhas gerais, limites de MRP e que **trade-offs** existem entre serviço, custo e capital.  
-**Duração sugerida:** **três horas** se você simular um **Pré-S&OP** por escrito com ata de uma página; **duas horas** em leitura profunda.  
-**Resultado de aprendizagem:** ao terminar, você deve conseguir **descrever** o **ciclo** típico de S&OP (revisões de produto, demanda, suprimento, reconciliação, executivo); **explicar** o que é **plano único versionado** e por que **suposições** importam tanto quanto números; **posicionar** **IBP** (*Integrated Business Planning*) como evolução que **traz finanças e estratégia** para o mesmo ritmo; **identificar** modos de falha comuns (KPI bonito sem dono, plano duplo, frozen horizon flexível só quando convém); e **escrever** uma mini-ata de Pré-S&OP com **trade-offs** explícitos.
-
----
-
 S&OP não nasceu como “mais uma reunião”. Nasceu como **antídoto à planilha dupla**: vendas com uma verdade, operações com outra, finanças com uma terceira — e o fornecedor ouvindo **todas** ao mesmo tempo por e-mail encaminhado. O processo tenta impor **cadência**, **artefato** e **dono** — três coisas pouco glamourosas que substituem **heroísmo** e **improviso**.
 
 **MetalRio** e **TechLar** aparecem como **espelhos**: indústria com **capacidade dura** versus varejo com **volatilidade de campanha**. O mecanismo de alinhamento é o mesmo: **narrativa única** sobre o futuro próximo.

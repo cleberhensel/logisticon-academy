@@ -1,12 +1,5 @@
 # Nível de serviço e KPIs logísticos — a métrica bonita que, sem dicionário, vira decoração de parede
 
-**Trilha:** Fundamentos e estratégia · **Módulo:** Custos logísticos e performance  
-**Público / nível:** Intermediário — recomenda-se ter lido **custos** e **fretes** para não separar **OTIF** do **custo total**.  
-**Duração sugerida:** **duas horas** se você refizer o laboratório com seus dados e escrever um **dicionário de dados** de uma página para o OTIF da sua empresa.  
-**Resultado de aprendizagem:** ao terminar, você deve conseguir **definir** OTIF, fill rate e acurácia de inventário com **definição operacional** (não só fórmula); **calcular** exemplos tabulares sem misturar **denominadores**; **detectar** incentivos perversos típicos; **separar** KPIs de **processo** e de **resultado**; e **desenhar** um painel mínimo com **dono**, **fonte**, **frequência** e **ação**.
-
----
-
 Trinta KPIs no painel e **ninguém age** quase sempre significa uma de três coisas: **falta definição operacional** (cada área mede “no prazo” de um jeito), falta **dono** com poder de mudar processo, ou os KPIs **premiam** comportamento errado — por exemplo, “despachar no dia” sem “entregar completo” ou sem **POD** válido. Bowersox et al. tratam desempenho logístico como sistema; Chopra e Meindl conectam serviço a **drivers** de projeto de cadeia. A literatura de *retail compliance* popularizou OTIF como **linguagem de multa** entre grandes e fornecedores — o que é útil pedagogicamente: **OTIF é contrato**, não aura.
 
 ---

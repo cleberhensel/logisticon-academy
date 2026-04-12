@@ -1,12 +1,5 @@
 # Estrutura de custos logísticos — o iceberg que finanças sente antes do frete aparecer na fatura
 
-**Trilha:** Fundamentos e estratégia · **Módulo:** Custos logísticos e performance  
-**Público / nível:** Intermediário — útil para quem vem de operações e precisa falar **P&L**, ou de finanças e precisa entender **doca** sem reduzir tudo a “despesa de frete”.  
-**Duração sugerida:** entre **duas horas** e **duas horas e meia** se você refizer o caso numérico com suas próprias premissas de capital; **noventa minutos** em leitura continua superficial para o tema.  
-**Resultado de aprendizagem:** ao terminar, você deve conseguir **decompor** custos logísticos em **buckets** coerentes; **explicar** por que *total landed cost* e *total cost to serve* são lentes diferentes sobre o mesmo objeto; **usar** a intuição de **ABC** (*activity-based costing*) para evitar rateios que escondem **cliente caro**; **ligar** decisões de estoque e de rede a **capital de giro**; e **narrar** o trade-off triplo **serviço–custo–capital** sem magia nem culpa unilateral na transportadora.
-
----
-
 Há um tipo de “vitória” que aparece no e-mail da diretoria na sexta-feira: **“negociamos 7% de redução no frete”**. Segunda-feira, o armazém relata **mais devoluções**, o atendimento reclama de **pedidos incompletos** e o estoque médio **subiu** porque alguém trocou **frequência** por **lote** para acomodar o novo padrão de transporte. Isto não é paradoxo místico; é **subotimização** — otimizar um elo **às custas** do sistema. Bowersox, Closs, Cooper e Bowersox (*Supply Chain Logistics Management*, McGraw-Hill) insistem na logística como **processo medido** em custo **e** serviço; Christopher (*Logistics and Supply Chain Management*, Pearson) lembra que a competição é frequentemente **cadeia contra cadeia**; Ballou (*Business Logistics / Supply Chain Management*, Pearson) dá ferramentas clássicas de engenharia econômica aplicada à logística. Você não precisa decorar; precisa de **vocabulário** para não confundir **fatura** com **economia**.
 
 A **TechLar** volta como ancoragem: e-commerce com **dois canais** (site próprio e marketplace). O mesmo SKU pode ter **margem líquida** radicalmente diferente quando se abre o *black box* logístico.

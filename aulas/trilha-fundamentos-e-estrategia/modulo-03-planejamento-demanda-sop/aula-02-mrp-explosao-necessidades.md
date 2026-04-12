@@ -1,12 +1,5 @@
 # MRP e explosão de necessidades — a máquina do tempo que só funciona se o calendário e a lista forem verdade
 
-**Trilha:** Fundamentos e estratégia · **Módulo:** Planejamento de demanda e S&OP  
-**Público / nível:** Intermediário — recomenda-se ter lido a aula de **previsão** e entendido **BOM** em linhas gerais; útil também ter nocão de **lead time** e **lote econômico**.  
-**Duração sugerida:** **três horas** se você redesenhar o exemplo numérico no papel semana a semana e simular uma mudança de **MOQ**; **duas horas** para leitura com um desenho rápido.  
-**Resultado de aprendizagem:** ao terminar, você deve conseguir **enumerar** entradas e saídas do MRP; **explicar** *gross requirement*, *scheduled receipt*, *projected on hand* e *planned order release* na lógica de **time-phasing**; **resolver** uma explosão simples com **MOQ** e múltiplos níveis; **interpretar** mensagens de exceção como **perguntas sobre cadastro ou política**; e **posicionar** DRP frente a MRP em uma frase honesta.
-
----
-
 Joseph Orlicky (*Material Requirements Planning*, McGraw-Hill, 1975) popularizou a ideia de que necessidades dependentes podem ser **calculadas** a partir de estrutura e tempos — revolucionário na época, banal hoje porque está **dentro** de todo ERP decente. O perigo moderno é outro: **desrespeitar** a lógica por achismo operacional — “o sistema pediu dez mil, mas eu sei que é demais”. Talvez você saiba; então **LT**, **BOM**, **lote** ou **MPS** estão mentindo. O MRP não “insiste” por teimosia; **reflete** o que foi digitado.
 
 Usaremos **MetalRio** (fictícia, montadora de kits de fixação para móveis) para texturizar explosão e calendário — substitua pela sua realidade.

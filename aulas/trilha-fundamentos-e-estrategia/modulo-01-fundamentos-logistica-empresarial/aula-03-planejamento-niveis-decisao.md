@@ -1,12 +1,5 @@
 # Planejamento logístico e níveis de decisão — do conselho à onda de picking
 
-**Trilha:** Fundamentos e estratégia · **Módulo:** Fundamentos da Logística Empresarial  
-**Público / nível:** Intermediário — pressupõe que você já entende fluxos e a diferença entre logística e SCM.  
-**Duração sugerida:** duas horas, se você fizer o caso numérico com calculadora e debater trade-offs por escrito.  
-**Resultado de aprendizagem:** você será capaz de **classificar** decisões em **estratégicas**, **táticas** e **operacionais** sem confundir horizonte; **explicar** como malha, capacidade e política de estoque se ligam à promessa ao cliente; **reconhecer** desalinhamento vertical (estratégia diz X, chão faz Y); e **preparar** terreno mental para o **S&OP** do módulo seguinte — isto é, entender que “plano” não é documento morto, é **cadência de decisão**.
-
----
-
 Há decisões que, uma vez tomadas, **viram tijolo** — literalmente, no caso de um novo centro de distribuição. Outras decisões mudam toda semana, como a ordem das ondas de separação. Misturar o **nível** dessas decisões na mesma reunião, sem rótulo, é como discutir **arquitetura de prédio** e **cor da tinta da sala** na mesma frase: todo mundo fala, ninguém decide, e o projeto custa o dobro. A logística empresarial sofre muito desse ruído porque ela é, ao mesmo tempo, **infraestrutura lenta** e **operação rápida**.
 
 ---

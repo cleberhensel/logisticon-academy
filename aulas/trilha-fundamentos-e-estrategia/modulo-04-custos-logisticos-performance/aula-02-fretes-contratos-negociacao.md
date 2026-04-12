@@ -1,12 +1,5 @@
 # Fretes, contratos e negociação — quando o preço bonito esconde a cauda do atraso e o POD que nunca chegou
 
-**Trilha:** Fundamentos e estratégia · **Módulo:** Custos logísticos e performance  
-**Público / nível:** Intermediário — recomenda-se a aula de **estrutura de custos** para não confundir **tarifa** com **economia**.  
-**Duração sugerida:** **duas horas e meia** se você montar uma planilha mínima de **RFP** e comparar duas propostas com **acessoriais**; **uma hora e meia** em leitura.  
-**Resultado de aprendizagem:** ao terminar, você deve conseguir **ler** uma proposta de frete com **componentes** (base, mínimos, combustível, espera, redespaço); **comparar** modais (FTL, LTL, pacote, multimodal) em **Q/P/R** (qualidade, preço, risco); **posicionar** **Incoterms®** como regra de **alocação de risco e custos** entre comprador e vendedor — com a ressalva de que **redação contratual** exige jurídico; e **estimar** impacto de **variabilidade de lead time** no **custo total** e no **OTIF**, não só na tarifa.
-
----
-
 A frase “ganhamos desconto no frete” é, muitas vezes, o primeiro capítulo de um drama em três atos: no segundo, **OTIF** cai; no terceiro, **CS** e **reenvio** comem a economia. Christopher descreve redes que competem por **confiabilidade** tanto quanto por preço; Bowersox et al. reforçam a leitura integrada de desempenho logístico; Chopra e Meindl dão o arcabouço de *drivers* — instalações, estoque, transporte, informação — para lembrar que **transporte** não flutua só.
 
 Na **TechLar**, o time comercial adora comparar **tarifa por pacote** entre transportadoras; o time de operações adora comparar **P95 de coleta** e **taxa de POD válido**. Esta aula ensina a **sentar os dois na mesma mesa** com um **vetor** de decisão.

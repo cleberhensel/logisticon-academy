@@ -1,12 +1,5 @@
 # Cadeia de suprimentos ponta a ponta — além do muro da fábrica
 
-**Trilha:** Fundamentos e estratégia · **Módulo:** Supply Chain Management  
-**Público / nível:** Intermediário — recomenda-se ter consolidado o vocabulário de logística empresarial.  
-**Duração sugerida:** duas horas, se você desenhar duas cadeias diferentes (ex.: alimentar vs. autopeças) ao final.  
-**Resultado de aprendizagem:** você será capaz de **descrever** a cadeia do insumo ao consumidor final com **atores**, **lead times** e **objetivos múltiplos**; **usar** a linguagem **SCOR** (Plan, Source, Make, Deliver, Return, Enable) como mapa mental sem confundir com software; **explicar** push, pull e **ponto de desacoplamento**; e **articular** conflitos típicos entre funções sem escolher “vilões”.
-
----
-
 Quando alguém diz “supply chain” em tom solene, muitas vezes o desenho mental ainda é uma **caixa** com setas entrando e saindo. A SCM real é mais parecida com um **ecossistema**: fornecedores de vários *tiers*, transportadoras, armazéns próprios e de terceiros, canais on-line e físicos, **informação** que atravessa fronteiras e **dinheiro** que atravessa mais devagar que o produto. O CSCMP define SCM como planejamento e gestão de **todas** as atividades desde *sourcing* e *procurement* até a logística, incluindo coordenação com parceiros e integração oferta–demanda **dentro e entre** empresas — definição que, pela própria sintaxe, **proíbe** o muro da fábrica como limite mental.
 
 ---

@@ -1,12 +1,5 @@
 # Riscos, resiliência e sustentabilidade na SCM — a cadeia que não cabe no Excel enxuto
 
-**Trilha:** Fundamentos e estratégia · **Módulo:** Supply Chain Management  
-**Público / nível:** Intermediário — pressupõe mapa de cadeia e nocão de trade-offs.  
-**Duração sugerida:** duas horas, se você escrever um mapa de riscos completo para um produto real.  
-**Resultado de aprendizagem:** você será capaz de **tipificar** riscos da cadeia, **comparar** mitigações (buffer, *dual sourcing*, *postponement*, nearshoring, continuidade digital), **articular** o dilema **eficiência vs. resiliência** sem slogans, e **ligar** decisões logísticas a **ESG operacional** mensurável — distinto de marketing verde.
-
----
-
 Resiliência virou palavra de moda após choques globais. Em logística, ela custa **dinheiro real**: segundo fornecedor qualificado, estoque de posição, contrato com SLA caro, **simulações** que ocupam horas de diretoria. **Eficiência enxuta** ainda é desejável — o erro é acreditar que “enxuto” significa “zero redundância” em **SKU crítico** ou **rota única** para sempre.
 
 ---

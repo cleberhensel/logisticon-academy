@@ -1,12 +1,5 @@
 # Integração e colaboração na cadeia — quando a planilha da sexta-feira mente na segunda
 
-**Trilha:** Fundamentos e estratégia · **Módulo:** Supply Chain Management  
-**Público / nível:** Intermediário a avançado em dinâmica organizacional.  
-**Duração sugerida:** duas horas, se você reproduzir o laboratório numérico em planilha.  
-**Resultado de aprendizagem:** você será capaz de **definir** integração como alinhamento de **dados, decisões e incentivos**; **explicar** o *bullwhip* com as quatro causas clássicas de Lee, Padmanabhan e Whang (1997); **estruturar** dados mínimos para colaboração (incluindo visão de **CPFR**); e **simular** como **lotes** alteram a variabilidade vista pelo fornecedor.
-
----
-
 Integração não é “todo mundo se gostar”. É **governança de número**: uma versão publicada de forecast, uma política de revisão, um conjunto de exceções tratadas com dono. Sem isso, cada função otimiza **a sua** planilha — e a cadeia, que não tem planilha própria, absorve o **choque**.
 
 ---
