@@ -1,69 +1,107 @@
-# Planejamento de Demanda (S&OP) — Aula 3: S&OP — processo, rituais e alinhamento
+# S&OP e alinhamento — do calendário de reuniões ao plano único que finanças reconhece
 
-**Trilha:** Fundamentos e estratégia  
-**Módulo:** Planejamento de Demanda (S&OP)  
-**Duração sugerida:** 90 minutos  
-**Pré-requisitos:** Aulas 1 e 2 deste módulo.
-
----
-
-## 1. Objetivos de aprendizagem
-
-1. Descrever as **fases** típicas do S&OP (produto, demanda, suprimento, reconciliação financeira, gestão executiva).
-2. Definir **plano único** publicado e o que muda quando ele é aprovado.
-3. Facilitar **reconciliação** entre volume de vendas, capacidade e estoque-alvo com exemplo numérico simples.
-4. Identificar **papéis** (donos de forecast, operações, finanças, supply) e cadência mensal versus semanal (rolling).
-5. Ligar S&OP a **decisões logísticas** (malha, contratos de transporte, política de estoque).
+**Trilha:** Fundamentos e estratégia · **Módulo:** Planejamento de demanda e S&OP  
+**Público / nível:** Avançado em **organização** — pressupõe entender forecast em linhas gerais, limites de MRP e que **trade-offs** existem entre serviço, custo e capital.  
+**Duração sugerida:** **três horas** se você simular um **Pré-S&OP** por escrito com ata de uma página; **duas horas** em leitura profunda.  
+**Resultado de aprendizagem:** ao terminar, você deve conseguir **descrever** o **ciclo** típico de S&OP (revisões de produto, demanda, suprimento, reconciliação, executivo); **explicar** o que é **plano único versionado** e por que **suposições** importam tanto quanto números; **posicionar** **IBP** (*Integrated Business Planning*) como evolução que **traz finanças e estratégia** para o mesmo ritmo; **identificar** modos de falha comuns (KPI bonito sem dono, plano duplo, frozen horizon flexível só quando convém); e **escrever** uma mini-ata de Pré-S&OP com **trade-offs** explícitos.
 
 ---
 
-## 2. Abertura — roteiro do instrutor
+S&OP não nasceu como “mais uma reunião”. Nasceu como **antídoto à planilha dupla**: vendas com uma verdade, operações com outra, finanças com uma terceira — e o fornecedor ouvindo **todas** ao mesmo tempo por e-mail encaminhado. O processo tenta impor **cadência**, **artefato** e **dono** — três coisas pouco glamourosas que substituem **heroísmo** e **improviso**.
 
-**Gancho:** “Temos duas verdades: a da comercial e a da fábrica. O S&OP existe para ter **uma**?”
-
-**Mensagem central:** S&OP é **governança de decisão** com números; tecnologia acelera, não substitui o ritual.
+**MetalRio** e **TechLar** aparecem como **espelhos**: indústria com **capacidade dura** versus varejo com **volatilidade de campanha**. O mecanismo de alinhamento é o mesmo: **narrativa única** sobre o futuro próximo.
 
 ---
 
-## 3. Conteúdo principal
+## Ciclo e papéis — orquestra com partitura, não jam session eterno
 
-### 3.1 Do forecast ao plano de negócio
+```mermaid
+flowchart TD
+  PR[Revisão de produto / portfólio] --> DR[Revisão de demanda]
+  DR --> SR[Revisão de suprimento e logística]
+  SR --> PRE[Pré-S&OP: gaps e trade-offs]
+  PRE --> EX[Reunião executiva: plano único]
+  EX --> PR
+```
 
-Demanda consensuada → plano de suprimento → gap de capacidade → ajustes (mix, promoção, outsourcing).
-
-### 3.2 Níveis de planejamento
-
-Ligação com aula de níveis estratégico/tático/operacional (módulo 1).
-
-### 3.3 Reuniões que funcionam
-
-Pauta mínima, pré-work com dados, decisões explícitas, **ata** com donos e prazos.
-
-### 3.4 Finanças no loop
-
-Traduzir unidades em **margem** e **capital**; evitar S&OP só em “caixas”.
+**Leitura:** o ciclo fecha; se não fecha, vira **puxadinho** de powerpoint. Cada etapa produz **artefato** (número, lista de riscos, decisão) — não só “conversa”.
 
 ---
 
-## 4. Simulação (25 min)
+## Pré-S&OP — onde a política aparece com roupa de planilha
 
-Rodada curta: dados na lousa, três áreas defendem números, **facilitador** conduz a uma decisão única com riscos top 3 — espelhar a atividade avaliativa do README do módulo.
+No Pré-S&OP, **mix** encontra **capacidade** encontra **logística**. É o lugar civilizado para dizer: “com esse forecast, **não fecha** — escolhemos **menos mix de baixa margem**, **overtime**, **subcontratação** ou **atraso comercial**”. Sem esse momento, a decisão estoura no **WhatsApp** do sábado.
 
----
-
-## 5. O que vira dado no sistema
-
-Versões de **planos** (demanda vs suprimento), **ATP** quando aplicável, cenários aprovados, parâmetros de política atualizados após decisão executiva.
+**Analogia do conselho de prédio:** assembleia executiva vota **orçamento**; o Pré-S&OP é a **comissão** que apresenta **três cenários** com prós e contras — sem achismo de corredor.
 
 ---
 
-## 6. Check de saída
+## Plano único — contrato interno com versão e suposições
 
-- Diferenciar S&OP de reunião de inventário operacional.
-- Dizer qual artefacto deve existir ao fim da fase executiva.
+Elementos mínimos honestos: **horizonte**, **granularidade**, **versão**, **data de corte**, **suposições** (preço, promoção, capacidade, importação), **cenários** arquivados, impacto esperado em **estoque**, **serviço** e **margem** quando dados permitem. **Hipótese pedagógica:** plano sem suposições é **romance**, não instrumento de gestão.
+
+```mermaid
+sequenceDiagram
+  participant DP as Demand planning
+  participant OP as Operações / PCP
+  participant LG as Logística
+  participant FI as Finanças
+  participant EX as Executivo
+  DP->>OP: forecast consensual
+  OP->>LG: necessidade física e janelas
+  LG->>OP: restrições de rede / frete
+  OP->>FI: volume e mix para P&L
+  FI->>EX: capital e margem
+  EX->>DP: decisões e prioridades
+```
 
 ---
 
-## 7. Próximo passo na Academy
+## IBP — quando o mesmo ritmo fala **dinheiro** e **estratégia**
 
-**Módulo 4 — Custos e performance** (traduzir plano em custo e KPIs) e trilha **Power BI** para painéis de S&OP.
+Em **IBP**, integra-se **margem**, **capital** e **cenários estratégicos** ao ciclo que nasceu como equilíbrio demanda–oferta. Fornecedores de software e consultorias descrevem a evolução como “S&OP cresceu para o P&L”; Gartner discute *Supply Chain Planning* em um mercado em mudança (parte do conteúdo é paga). **Consenso de mercado:** nomes mudam; o que importa é **governança** e **coerência temporal** entre áreas.
+
+---
+
+## Modos de falha — lista anti-encanto
+
+- **Frozen horizon** que congela só para compras, nunca para vendas.  
+- **KPI** de forecast sem corte por **família** ou **canal**.  
+- **Plano duplo**: o oficial e o “do bolso” do comercial.  
+- **Logística** convidada só para **cabeçar** quando já está tudo decidido.
+
+---
+
+## Simulação escrita — MetalRio, semana típica
+
+**Dados:** forecast de família **11.200** peças no mês; capacidade interna estável em **9.800**; subcontratação caríssima acrescenta **1.500** no máximo, com **lead time** de três semanas; estoque de segurança político cai se atrasar **SKU** crítico de canal B2B. **Pedido:** escreva **ata de Pré-S&OP** com: (1) plano único; (2) três riscos; (3) três ações com **dono**; (4) uma frase para o **CEO** sobre trade-off de **margem versus serviço**.
+
+**Gabarito pedagógico (direção, não cópia):** plano único deve **escolher** entre subcontratar parcialmente, nivelar vendas de canal, ou atrasar entrega com **comunicação**; riscos incluem **fill rate** B2B, **custo premium**, **oscilação de MP**; ações incluem **campanha de mix**, **ajuste de MPS**, **contrato spot** documentado.
+
+---
+
+## Exercícios
+
+1. Diferencie **S&OP** de **war room** semanal de OTIF **em uma frase**.  
+2. Nomeie **dois** artefatos que tornam o executivo **rápido** sem ser **leviano**.
+
+**Gabarito:** (1) S&OP equilibra **volume/mix/capacidade** no horizonte médio; war room reage a **exceções** de curto prazo. (2) pacote de **cenários** + página de **suposições** com assinatura.
+
+---
+
+## Fechamento
+
+**Takeaways:** S&OP é **governança de tempo**; Pré-S&OP é **arena civilizada** de trade-offs; IBP **amarra** caixa e estratégia ao ritmo.
+
+**Pergunta:** qual suposição hoje é **tácita** e deveria estar no cabeçalho do plano?
+
+---
+
+## Referências
+
+1. GARTNER — *Supply Chain Planning*: https://www.gartner.com/en/supply-chain/topics/supply-chain-planning  
+2. SAP — contexto de mercado sobre S&OP / planejamento integrado: https://www.sap.com/products/scm/integrated-business-planning/what-is-supply-chain-planning/sop-sales-operations.html  
+3. CHOPRA, S.; MEINDL, P. *Supply Chain Management*. Pearson. https://www.pearson.com/en-us/subject-catalog/p/supply-chain-management-strategy-planning-and-operation/P200000012829  
+4. ASCM — CPIM: https://www.ascm.org/learning-development/certifications-credentials/cpim/  
+5. CSCMP — Glossário: https://cscmp.org/CSCMP/cscmp/educate/scm_definitions_and_glossary_of_terms.aspx  
+6. WALLACE, T. F.; STEFAN, R. M. *Sales and Operations Planning: The How-to Handbook*. T. F. Wallace & Company (clássico de processo; edições variam).  

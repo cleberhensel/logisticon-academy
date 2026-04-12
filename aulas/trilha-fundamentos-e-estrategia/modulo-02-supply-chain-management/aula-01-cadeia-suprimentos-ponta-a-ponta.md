@@ -1,69 +1,83 @@
-# Supply Chain Management — Aula 1: Cadeia de suprimentos ponta a ponta
+# Cadeia de suprimentos ponta a ponta — além do muro da fábrica
 
-**Trilha:** Fundamentos e estratégia  
-**Módulo:** Supply Chain Management  
-**Duração sugerida:** 65 minutos  
-**Pré-requisitos:** Módulo 1 concluído ou equivalente.
-
----
-
-## 1. Objetivos de aprendizagem
-
-1. Desenhar a cadeia **do fornecedor de matéria-prima ao consumidor**, com nós intermediários relevantes ao sector escolhido pelo instrutor.
-2. Explicar **lead time** acumulado e dependências (mono-fornecedor versus multi-fonte).
-3. Relacionar objetivos da cadeia: **disponibilidade**, **custo total**, **risco** e **capital**.
-4. Identificar **decisões de fronteira** entre funções (compras vs logística vs vendas).
-5. Introduzir o conceito de **nível de serviço** como contrato interno ou externo.
+**Trilha:** Fundamentos e estratégia · **Módulo:** Supply Chain Management  
+**Público / nível:** Intermediário — recomenda-se ter consolidado o vocabulário de logística empresarial.  
+**Duração sugerida:** duas horas, se você desenhar duas cadeias diferentes (ex.: alimentar vs. autopeças) ao final.  
+**Resultado de aprendizagem:** você será capaz de **descrever** a cadeia do insumo ao consumidor final com **atores**, **lead times** e **objetivos múltiplos**; **usar** a linguagem **SCOR** (Plan, Source, Make, Deliver, Return, Enable) como mapa mental sem confundir com software; **explicar** push, pull e **ponto de desacoplamento**; e **articular** conflitos típicos entre funções sem escolher “vilões”.
 
 ---
 
-## 2. Abertura — roteiro do instrutor
-
-**Gancho:** “O problema apareceu na loja — onde começou de facto na cadeia?”
-
-**Mensagem central:** SCM começa **fora** do muro da fábrica; mapa errado gera otimização errada.
+Quando alguém diz “supply chain” em tom solene, muitas vezes o desenho mental ainda é uma **caixa** com setas entrando e saindo. A SCM real é mais parecida com um **ecossistema**: fornecedores de vários *tiers*, transportadoras, armazéns próprios e de terceiros, canais on-line e físicos, **informação** que atravessa fronteiras e **dinheiro** que atravessa mais devagar que o produto. O CSCMP define SCM como planejamento e gestão de **todas** as atividades desde *sourcing* e *procurement* até a logística, incluindo coordenação com parceiros e integração oferta–demanda **dentro e entre** empresas — definição que, pela própria sintaxe, **proíbe** o muro da fábrica como limite mental.
 
 ---
 
-## 3. Conteúdo principal
+## SCOR como “mapa de trilhas” (ASCM)
 
-### 3.1 Atores e fluxos
+O modelo **SCOR** (*Supply Chain Operations Reference*) organiza processos em **Plan, Source, Make, Deliver, Return, Enable**. Você não precisa “implementar SCOR” para se beneficiar: use como **checklist de conversa**. “Onde estamos falhando em **Plan**?” muitas vezes revela que a empresa discute **capacidade** sem **forecast** honesto; “onde estamos frágeis em **Return**?” revela devolução como **desenhador de custo** invisível.
 
-Fornecedores tier-1/tier-2 (conceito), fabricação, armazéns, atacado, varejo, consumidor; canais on-line e marketplace como complicadores.
+```mermaid
+flowchart LR
+  P[Plan] --> S[Source]
+  S --> M[Make]
+  M --> D[Deliver]
+  D --> R[Return]
+  E[Enable] -.-> P
+  E -.-> S
+  E -.-> M
+  E -.-> D
+  E -.-> R
+```
 
-### 3.2 Lead time e decoupling points
-
-Ponto de separação entre **push** e **pull** (conceito); implicações para posição de estoque.
-
-### 3.3 Objectivos possivelmente conflituosos
-
-Vendas quer disponibilidade; finanças quer giro; operações quer estabilidade de volume — papel do **plano integrado** (ponte para módulo 3).
-
-### 3.4 Métricas em nível de cadeia (visão)
-
-Fill rate de SKU crítico, OTIF ao cliente, **cash-to-cash** (mencionar sem contabilidade profunda).
-
----
-
-## 4. Exercício (15 min)
-
-Mapa em branco por sector (alimentar, autopeças, farmacêutico): completar nós e marcar **um** risco estrutural (geográfico, regulatório, sazonal).
+**Leitura:** *Enable* é tudo que sustenta os outros processos — dados, qualidade, risco, **gestão de parceiros**. Logística aparece forte em **Deliver** e **Return**, mas não só.
 
 ---
 
-## 5. O que vira dado no sistema
+## Push, pull e o ponto onde a cadeia “respira”
 
-Cadastro de **fornecedor** e lead time contratual, **BOM** quando aplicável, roteiros logísticos, alocação de canais, registo de **OTIF** por cliente ou canal.
+**Push** antecipa com base em **forecast** e economias de escala; **pull** aciona reposição com base em **consumo** real ou sinal próximo do consumo. Na prática, misturas dominam. O **ponto de desacoplamento** (*decoupling point*) é onde a estratégia muda de “empurrar” para “puxar” — por exemplo, estoque de SKU semi-acabado genérico antes da personalização final (*postponement*, tema que reaparece em estratégia de produto).
 
----
-
-## 6. Check de saída
-
-- Definir “cadeia” numa frase sem usar a palavra “empresa” sozinha.
-- Indicar um nó onde a informação é mais crítica que o transporte.
+**Analogia da padaria:** a fornada empurrada de manhã é **push**; o sanduíche montado sob pedido no almoço é **pull** com ingredientes semi-preparados — o desacoplamento é a **bancada** entre “massa” e “nome do cliente no copo”.
 
 ---
 
-## 7. Próximo passo na Academy
+## Objetivos múltiplos: disponibilidade, custo, risco, capital — e a ilusão de “tudo verde”
 
-Aula seguinte: **integração e colaboração**; trilha **Master Data** (quando existir no catálogo) para aprofundar cadastros que sustentam o mapa.
+Chopra & Meindl insistem em **trade-offs** entre *drivers*; Christopher enfatiza competição **cadeia a cadeia**. Na prática, **vendas** quer disponibilidade, **finanças** quer giro, **produção** quer estabilidade de volume, **logística** quer previsibilidade de mix. SCM não “resolve” conflitos por mágica — cria **cadência** para que conflitos apareçam como **números** e não como **lendas de corredor**.
+
+---
+
+## Caso longo — **MetalRio** (fictícia): insumo importado, promessa curta
+
+**Enredo:** fabricante de componentes; insumo crítico importado com **LT 90 dias**; vendas promete **30 dias** ao cliente final para SKU acabado; CFO pressiona por **baixo capital**.
+
+**Perguntas:** (1) onde está o **risco** concentrado? (2) que alavancas existem além de “pedir para compras comprar mais cedo”? (3) que métrica financeira simples ajuda a conversar com o conselho?
+
+**Síntese:** sem **buffer** de MP, **segundo fornecedor** em qualificação, **postponement** de mix ou **revisão** da promessa comercial, a cadeia resolve no **premium freight** ou na **ruptura** — ambos caros, mas um deles destrói **marca**.
+
+---
+
+## Exercícios
+
+1. Desenhe **duas** cadeias do mesmo setor com **gargalos** diferentes (ex.: frio vs. não frio).  
+2. Defina SCM numa frase **sem** usar “empresa” como limite.  
+3. Dê exemplo de otimização **local** que prejudica a cadeia.
+
+**Gabarito:** (2) ver capítulo anterior; (3) exemplo: compras ganham bônus por lote gigante → estoque e obsolescência sobem.
+
+---
+
+## Referências
+
+1. CSCMP — *What is SCM?*: https://cscmp.org/CSCMP/CSCMP/Certify/Fundamentals/What_is_Supply_Chain_Management.aspx  
+2. ASCM — SCOR: https://www.ascm.org/  
+3. CHOPRA, S.; MEINDL, P. *Supply Chain Management*. Pearson. https://www.pearson.com/en-us/subject-catalog/p/supply-chain-management-strategy-planning-and-operation/P200000012829  
+4. CHRISTOPHER, M. *Logistics and Supply Chain Management*. Pearson, 2022. https://www.pearson.com/en-us/subject-catalog/p/logistics-and-supply-chain-management/P200000007134  
+5. BOWERSOX, D. J.; et al. *Supply Chain Logistics Management*. McGraw-Hill. https://www.mheducation.com/highered/product/supply-chain-logistics-management-bowersox.html  
+
+---
+
+## Síntese
+
+SCM é **rede + tempo + dados + dinheiro**; o mapa começa **fora** do muro; trade-offs são o **material** da profissão.
+
+**Pergunta:** qual ator da sua cadeia você mais trata como “fundo pintado”?

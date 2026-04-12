@@ -1,69 +1,104 @@
-# Fundamentos da Logística Empresarial — Aula 3: Planejamento logístico e níveis de decisão
+# Planejamento logístico e níveis de decisão — do conselho à onda de picking
 
-**Trilha:** Fundamentos e estratégia  
-**Módulo:** Fundamentos da Logística Empresarial  
-**Duração sugerida:** 75 minutos  
-**Pré-requisitos:** Aulas 1 e 2 deste módulo.
-
----
-
-## 1. Objetivos de aprendizagem
-
-1. Distinguir decisões **estratégicas**, **táticas** e **operacionais** em rede, capacidade e políticas de estoque.
-2. Relacionar **malha logística** (número e papel de instalações) a tempo de resposta e custo fixo.
-3. Explicar **política de estoque** em termos de alvo de serviço, ponto de reposição e regras de priorização (sem ainda detalhar MRP).
-4. Reconhecer **sinais** de desalinhamento entre níveis (estratégia diz “regionalizar”, operação ainda compra “nacional único”).
-5. Preparar terreno para **S&OP** (módulo 3) como ponte entre plano de volume e execução.
+**Trilha:** Fundamentos e estratégia · **Módulo:** Fundamentos da Logística Empresarial  
+**Público / nível:** Intermediário — pressupõe que você já entende fluxos e a diferença entre logística e SCM.  
+**Duração sugerida:** duas horas, se você fizer o caso numérico com calculadora e debater trade-offs por escrito.  
+**Resultado de aprendizagem:** você será capaz de **classificar** decisões em **estratégicas**, **táticas** e **operacionais** sem confundir horizonte; **explicar** como malha, capacidade e política de estoque se ligam à promessa ao cliente; **reconhecer** desalinhamento vertical (estratégia diz X, chão faz Y); e **preparar** terreno mental para o **S&OP** do módulo seguinte — isto é, entender que “plano” não é documento morto, é **cadência de decisão**.
 
 ---
 
-## 2. Abertura — roteiro do instrutor
-
-**Gancho:** “Quem na empresa pode alterar o número de CDs — o supervisor de expedição, o director de logística ou o conselho?”
-
-**Mensagem central:** Problemas “de chão de fábrica” muitas vezes têm raiz em **decisão de nível errado** ou horizonte de tempo mal definido.
+Há decisões que, uma vez tomadas, **viram tijolo** — literalmente, no caso de um novo centro de distribuição. Outras decisões mudam toda semana, como a ordem das ondas de separação. Misturar o **nível** dessas decisões na mesma reunião, sem rótulo, é como discutir **arquitetura de prédio** e **cor da tinta da sala** na mesma frase: todo mundo fala, ninguém decide, e o projeto custa o dobro. A logística empresarial sofre muito desse ruído porque ela é, ao mesmo tempo, **infraestrutura lenta** e **operação rápida**.
 
 ---
 
-## 3. Conteúdo principal
+## Horizonte, reversibilidade e “custo de desfazer”
 
-### 3.1 Horizonte e frequência
+Uma forma útil de pensar — sem amarrar a literatura a um único autor — é a tríade **estratégico / tático / operacional** baseada em **horizonte de tempo**, **reversibilidade** e **intensidade de capex**. Estratégico: anos; reversão cara; exemplo: **número e localização de CDs**. Tático: meses; ajustes de contrato, políticas de estoque por família, acordos sazonais com transporte. Operacional: dias ou horas; reversível com mais esforço humano, mas sem mudar tijolo; exemplo: **sequência de ondas**, alocação de doca.
 
-Estratégico: anos; tático: meses/trimestres; operacional: dias/semanas. Exemplos: abertura de hub (estratégico), contrato sazonal de transporte (tático), sequência de ondas de separação (operacional).
-
-### 3.2 Malha e capacidade
-
-Capacidade de armazém (m², paletes), docas, horas de picking, frota própria versus terceiros. Trade-off **serviço regional** versus **duplicação de estoque**.
-
-### 3.3 Políticas e alinhamento comercial
-
-SLO internos, cortes de pedido, prioridade de clientes estratégicos — sempre com custo explícito.
-
-### 3.4 Ciclo fechado
-
-Planejar → executar → medir → ajustar; antecipar o módulo 4 (KPIs) como **consequência** do plano.
+**Analogia orquestral:** estratégico é escolher **quantos violinistas** contratar para a temporada; tático é **ensaiar o repertório** por mês; operacional é **dirigir o gesto** da batuta em cada noite. Se o maestro tentar resolver “quantos violinistas” durante o concerto, o resultado é ruído — na empresa, vira **reunião eterna** e **burnout**.
 
 ---
 
-## 4. Caso rápido (20 min)
+## Malha: o que você compra quando “compra proximidade”
 
-Empresa com um CD nacional e e-commerce em crescimento: três opções (status quo, CD regional, fulfilment externo). Grupos escolhem uma opção e defendem **um** KPI estratégico e **um** operacional que mudariam.
+Regionalizar costuma **comprar tempo** ao cliente e **vender** duplicação de estoque, sistemas, pessoas e complexidade de **replenishment**. Centralizar costuma **comprar economia de escala** e **vender** distância média e risco de **ponto único**. Não existe “melhor” universal — existe encaixe com a **promessa** e com o **custo total** (o módulo 4 da trilha será o lugar de quantificar isso com mais fôlego).
+
+```mermaid
+flowchart LR
+  subgraph central["Mais centralizado"]
+    c1[Menos CDs]
+    c2[Menor fixo relativo]
+    c3[Maior distância média]
+  end
+  subgraph regional["Mais regionalizado"]
+    r1[Mais CDs ou hubs]
+    r2[Maior fixo e estoque agregado]
+    r3[Menor tempo médio regional]
+  end
+```
+
+Na **TechLar**, um diretor propõe “três CDs” para cumprir campanha de 24 h nas capitais. A pergunta estratégica imediata não é “quantos caminhões?” — é: **o forecast e o mix por região** suportam três pools de estoque sem virar obsolescência regional de **cor** e **tamanho** que não giram igual no Nordeste e no Sul?
 
 ---
 
-## 5. O que vira dado no sistema
+## Capacidade não é só “metros quadrados”
 
-Locais de armazém, capacidades por período, **ATP/CTP** em empresas que usam disponibilidade prometida, parâmetros de política (mínimo/máximo, dias de cobertura). Reforçar qualidade de **cadastro de rotas** e tempos de transporte.
+Capacidade logística inclui **docas**, **horas de picking**, **equipamentos de movimentação**, **balanças**, **pessoas por turno**, **sistemas que não travam** no pico. Um armazém pode ter “vazio” de paletes e, ainda assim, estar **capacitivo** na expedição porque **docas** são o gargalo — fila de caminhões é fila de **dinheiro** e de **promessa**.
 
----
-
-## 6. Check de saída
-
-- Classificar três decisões do caso como E/T/O (estratégico/tático/operacional).
-- Dizer qual dado mestre mais costuma estar errado quando o plano falha.
+**Analogia hospitalar (recepção):** leitos vazios não adiantam se a **triagem** é o gargalo; pacientes acumulam na entrada. Na logística, pedidos acumulam na **área de staging** se a doca não desenha.
 
 ---
 
-## 7. Próximo passo na Academy
+## Políticas e promessa: SLO interno como “gramática” do que pode ser dito ao cliente
 
-**Módulo 2 — Supply Chain Management** (visão ponta a ponta) e depois **Planejamento de Demanda (S&OP)**.
+**SLO** (*service level objective*) interno traduz estratégia em linguagem operacional: “95% das linhas do canal X em até 48h úteis, exceto SKU listados em anexo”. Sem SLO, vendas fala **português**, logística fala **japonês**, e o cliente ouve **promessa** no site. Quando a empresa amadurece, isso conversa com **ATP**; por ora, basta internalizar: **promessa sem política** é dívida.
+
+---
+
+## Desalinhamento vertical: sintomas que todo mundo reconhece mas raramente nomeia
+
+- Estratégia diz **regionalizar**, mas compras ainda negocia **frete nacional único** como se o CD fosse um.  
+- Marketing promove **SKU pesado**, mas o layout do armazém foi desenhado para **SKU leve** de alta rotação.  
+- Finanças corta **headcount** no CD na mesma semana em que vendas **dobra meta** — OTIF despenca e cada área tem narrativa inocente.
+
+Isso não é “falta de boa vontade”; é **ausência de ritmo** que conecte níveis — exatamente o problema que o **S&OP** veio endereçar no módulo seguinte.
+
+---
+
+## Caso numérico — “um CD ou três?” (TechLar)
+
+| Cenário | Nº CDs | LT médio ao cliente (dias) | Estoque médio (unid.) | Fixo mensal (índice) |
+|---------|--------|----------------------------|------------------------|------------------------|
+| A | 1 | 4 | 8.000 | 100 |
+| B | 3 | 1,5 | 12.000 | 148 |
+
+Use valor unitário médio **$50** e custo de capital **1%/mês** sobre estoque médio como **proxy** pedagógico; some ao fixo e discuta **serviço** e **risco** além do número.
+
+**Leitura:** regionalizar sem **SKU regionalizado** é como abrir **três cozinhas** com o mesmo cardápio de SP para o Nordeste — pode funcionar, ou pode gerar **prato parado** na vitrine.
+
+---
+
+## Exercícios
+
+1. Classifique cinco decisões do seu ambiente real em **E/T/O** e discuta um caso em que dois grupos discordam do rótulo — por quê?  
+2. Explique por que S&OP **não** é “só tático” nem “só operacional”.
+
+**Gabarito orientativo:** (2) S&OP reconcilia volume/mix/capacidade em horizonte **mensal/trimestral** com papel de **média e alta gestão**; não substitui onda diária nem decide tijolo sozinho, mas informa **ambos**.
+
+---
+
+## Referências
+
+1. CHOPRA, S.; MEINDL, P. *Supply Chain Management*. Pearson. https://www.pearson.com/en-us/subject-catalog/p/supply-chain-management-strategy-planning-and-operation/P200000012829  
+2. BALLOU, R. H. *Business Logistics / Supply Chain Management*. Pearson.  
+3. CHRISTOPHER, M. *Logistics and Supply Chain Management*. Pearson, 2022. https://www.pearson.com/en-us/subject-catalog/p/logistics-and-supply-chain-management/P200000007134  
+4. CSCMP — Glossário: https://cscmp.org/CSCMP/cscmp/educate/scm_definitions_and_glossary_of_terms.aspx  
+5. GARTNER — *Supply Chain Planning*: https://www.gartner.com/en/supply-chain/topics/supply-chain-planning  
+
+---
+
+## Síntese
+
+Níveis de decisão existem para **proteger** a empresa de otimizar o dia e quebrar o triênio; malha e capacidade são **alavancas** com preço explícito e oculto.
+
+**Pergunta:** qual decisão na sua empresa está claramente no **nível errado** da mesa?

@@ -32,7 +32,9 @@ Alinhamento aos níveis **Foundation** e **Professional** em [`discovery/base.md
 | 3 | [`modulo-03-planejamento-demanda-sop/`](modulo-03-planejamento-demanda-sop/README.md) | Previsão, MRP, processo S&OP |
 | 4 | [`modulo-04-custos-logisticos-performance/`](modulo-04-custos-logisticos-performance/README.md) | Custos, fretes, nível de serviço e KPIs |
 
-Cada módulo contém **três aulas** em Markdown (roteiro para instrutor + síntese de conteúdo).
+Cada módulo contém **três aulas** em Markdown (conteúdo alargado para autoestudo ou sala, com exercícios, casos e **referências bibliográficas**).
+
+**Checklist das 12 aulas:** [CHECKLIST-AULAS.md](CHECKLIST-AULAS.md)
 
 ---
 
