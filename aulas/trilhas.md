@@ -9,6 +9,8 @@
 
 ### Trilha - Dados e analytics aplicados à logística
 
+**Material:** [trilha-dados-analytics-logistica](trilha-dados-analytics-logistica/README.md) (12 aulas em Markdown).
+
 | modulo | Objetivo em uma linha |
 |--------|------------------------|
 | Data Analytics para Logística | Dados para decisão logística |
@@ -30,7 +32,7 @@ Foco em **diferencial de mercado** (ERP e operações digitais).
 
 ### Trilha - Operações logísticas
 
-| modulo | Objetivo em uma linia |
+| modulo | Objetivo em uma linha |
 |--------|------------------------|
 | Gestão de Estoques | FIFO, LIFO, cobertura, inventários |
 | Armazenagem e Layout Logístico | Picking, slotting e eficiência |
