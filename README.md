@@ -74,6 +74,7 @@ flowchart LR
 
 | Área | Conteúdo |
 |------|-----------|
+| [discovery/adequacao-posicionamento-fase1-menos-sap.md](discovery/adequacao-posicionamento-fase1-menos-sap.md) | Planejamento de adequação: menos ênfase em SAP na fase 1 (stakeholder), mapa de ficheiros a ajustar; **plan/** permanece inalterado |
 | [discovery/base.md](discovery/base.md) | Visão, proposta de valor, níveis Foundation / Professional / Specialist, catálogo de trilhas, rotas certificáveis |
 | [discovery/pesquisa/](discovery/pesquisa/) | Concorrência, plataformas, tendências, níveis pedagógicos, ampliação da proposta, síntese para software |
 | [discovery/analises-tecnica/](discovery/analises-tecnica/) | Especificação da plataforma v1; entrada: [plataforma-logistikon-especificacao-tecnica-v1.md](discovery/analises-tecnica/plataforma-logistikon-especificacao-tecnica-v1.md) e [topicos-v1/00-indice.md](discovery/analises-tecnica/topicos-v1/00-indice.md) |
