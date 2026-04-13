@@ -22,6 +22,8 @@
 
 Foco em **diferencial de mercado** (ERP e operações digitais).
 
+**Material:** [trilha-tecnologia-e-sistemas](trilha-tecnologia-e-sistemas/README.md) (15 aulas em Markdown; ordem sugerida de estudo no README).
+
 | modulo | Objetivo em uma linha |
 |--------|------------------------|
 | SAP para Logística (MM / SD / WM) | Processos logísticos dentro do ERP |
@@ -31,6 +33,8 @@ Foco em **diferencial de mercado** (ERP e operações digitais).
 | Master Data para Logística | Cadastros que sustentam o sistema |
 
 ### Trilha - Operações logísticas
+
+**Material:** [trilha-operacoes-logisticas](trilha-operacoes-logisticas/README.md) (12 aulas em Markdown).
 
 | modulo | Objetivo em uma linha |
 |--------|------------------------|
@@ -42,6 +46,8 @@ Foco em **diferencial de mercado** (ERP e operações digitais).
 ### Trilha - Melhoria contínua e processos
 
 Ênfase em **experiência corporativa** (Lean, projetos, excelência operacional).
+
+**Material:** [trilha-melhoria-continua-e-processos](trilha-melhoria-continua-e-processos/README.md) (12 aulas em Markdown).
 
 | modulo | Objetivo em uma linha |
 |--------|------------------------|
