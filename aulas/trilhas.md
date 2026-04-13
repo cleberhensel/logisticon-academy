@@ -58,6 +58,10 @@ Foco em **diferencial de mercado** (ERP e operações digitais).
 
 ### Trilha - Logística estratégica (especialista)
 
+Foco em **arquitetura da cadeia**, **política de fornecimento**, **SRM** e **literacia digital estratégica** (IoT, *digital twin*, governança de IA).
+
+**Material:** [trilha-logistica-estrategica](trilha-logistica-estrategica/README.md) (12 aulas em Markdown).
+
 | modulo | Objetivo em uma linha |
 |--------|------------------------|
 | Network Design | Desenho de redes logísticas |
