@@ -1,5 +1,30 @@
 # Riscos, resiliência e sustentabilidade na SCM — a cadeia que não cabe no Excel enxuto
 
+## Objetivos e resultado de aprendizagem
+
+Ao final da aula, o aluno será capaz de classificar riscos de cadeia, priorizar mitigação por impacto/probabilidade e discutir sustentabilidade como requisito operacional e reputacional.
+
+## Gancho (3–5 min)
+
+Um único fornecedor crítico para por 10 dias e o custo real aparece em ruptura, multa e perda de confiança.
+
+## Mapa do conteúdo
+
+- Tipologia de riscos na cadeia.
+- Resiliência: buffer, redundância e governança.
+- Sustentabilidade e compliance no fluxo logístico.
+- Tomada de decisão sob incerteza.
+
+## KPIs e decisão
+
+- OTIF sob contingência.
+- Tempo médio de recuperação (MTTR).
+- Exposição a single source e conformidade ESG básica.
+
+## Ponte
+
+Conecta com [Logística estratégica — SRM e risco](../../trilha-logistica-estrategica/README.md).
+
 Resiliência virou palavra de moda após choques globais. Em logística, ela custa **dinheiro real**: segundo fornecedor qualificado, estoque de posição, contrato com SLA caro, **simulações** que ocupam horas de diretoria. **Eficiência enxuta** ainda é desejável — o erro é acreditar que “enxuto” significa “zero redundância” em **SKU crítico** ou **rota única** para sempre.
 
 ---

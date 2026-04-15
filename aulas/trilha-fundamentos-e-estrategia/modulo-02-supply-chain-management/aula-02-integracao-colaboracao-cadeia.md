@@ -1,5 +1,30 @@
 # Integração e colaboração na cadeia — quando a planilha da sexta-feira mente na segunda
 
+## Objetivos e resultado de aprendizagem
+
+Ao final da aula, o aluno será capaz de identificar pré-requisitos de colaboração interfuncional e propor uma rotina de integração com papéis, dados e cadência.
+
+## Gancho (3–5 min)
+
+Vendas, compras e logística usam números diferentes para o mesmo mês e ninguém confia no plano publicado.
+
+## Mapa do conteúdo
+
+- Integração como governança de decisão.
+- Fontes de conflito entre áreas.
+- Bullwhip e coordenação.
+- Rotinas de colaboração e disciplina de dados.
+
+## KPIs e decisão
+
+- Aderência ao plano publicado.
+- Frequência e impacto de replanejamento.
+- Confiabilidade de forecast por família.
+
+## Ponte
+
+Conecta com [S&OP](../modulo-03-planejamento-demanda-sop/README.md) para ritual de reconciliação.
+
 Integração não é “todo mundo se gostar”. É **governança de número**: uma versão publicada de forecast, uma política de revisão, um conjunto de exceções tratadas com dono. Sem isso, cada função otimiza **a sua** planilha — e a cadeia, que não tem planilha própria, absorve o **choque**.
 
 ---

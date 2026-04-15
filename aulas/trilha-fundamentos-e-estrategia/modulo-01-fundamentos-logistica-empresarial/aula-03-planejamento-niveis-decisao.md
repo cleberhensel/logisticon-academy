@@ -1,5 +1,30 @@
 # Planejamento logístico e níveis de decisão — do conselho à onda de picking
 
+## Objetivos e resultado de aprendizagem
+
+Ao final da aula, o aluno será capaz de distinguir decisões estratégicas, táticas e operacionais em logística e justificar implicações de prazo, capex e reversibilidade.
+
+## Gancho (3–5 min)
+
+Debater localização de CD e sequência de picking na mesma reunião gera conflito e baixa qualidade de decisão.
+
+## Mapa do conteúdo
+
+- Horizonte e nível de decisão.
+- Reversibilidade e custo de desfazer.
+- Impacto de desenho de rede nas decisões do dia a dia.
+- Governança de decisão por nível.
+
+## KPIs e decisão
+
+- Tempo de decisão por nível.
+- Cumprimento de plano tático.
+- Custo de mudança e impacto em serviço.
+
+## Ponte
+
+Conecta com [Logística estratégica](../../trilha-logistica-estrategica/README.md) para decisões de rede e sourcing.
+
 Há decisões que, uma vez tomadas, **viram tijolo** — literalmente, no caso de um novo centro de distribuição. Outras decisões mudam toda semana, como a ordem das ondas de separação. Misturar o **nível** dessas decisões na mesma reunião, sem rótulo, é como discutir **arquitetura de prédio** e **cor da tinta da sala** na mesma frase: todo mundo fala, ninguém decide, e o projeto custa o dobro. A logística empresarial sofre muito desse ruído porque ela é, ao mesmo tempo, **infraestrutura lenta** e **operação rápida**.
 
 ---

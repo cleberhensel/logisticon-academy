@@ -4,6 +4,10 @@
 
 ---
 
+## Resultado do módulo
+
+Ao final do módulo, o aluno consegue desenhar a cadeia ponta a ponta, identificar gargalos entre áreas e argumentar escolhas de integração, colaboração e mitigação de risco com base em dados operacionais.
+
 ## Objetivos de aprendizagem (mensuráveis)
 
 1. Desenhar a cadeia do fornecedor ao cliente final, com nós intermediários (CD, cross-dock, loja).
@@ -24,7 +28,7 @@
 
 ---
 
-## Erros comuns de alunos
+## Erros comuns do módulo
 
 - Desenhar a cadeia só no interior da empresa.
 - Confundir integração com “acordo informal” em vez de processos e dados alinhados.
@@ -43,3 +47,10 @@
 ## Caso-base para discussão
 
 Fabricante com insumo importado (lead time longo) e vendas com prazos curtos: redesenhar a visão ponta a ponta, localizar concentração de risco e propor alavanca (cadência S&OP, buffer de MP versus produto acabado).
+
+---
+
+## Ligações
+
+- [Módulo 3 — Planejamento de Demanda (S&OP)](../modulo-03-planejamento-demanda-sop/README.md)
+- [Trilha Logística estratégica](../../trilha-logistica-estrategica/README.md)

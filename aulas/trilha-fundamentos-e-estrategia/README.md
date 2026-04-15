@@ -23,6 +23,17 @@ Alinhamento aos níveis **Foundation** e **Professional** em [`discovery/base.md
 
 ---
 
+## Anti-redundância (fronteiras)
+
+| Tema | Onde já existe | O que esta trilha cobre |
+|------|----------------|-------------------------|
+| Ferramentas (ERP/WMS/TMS) | [`../trilha-tecnologia-e-sistemas/README.md`](../trilha-tecnologia-e-sistemas/README.md) | Nesta trilha: lógica de processo e decisão; detalhes transacionais ficam na trilha de sistemas. |
+| Dashboards e BI | [`../trilha-dados-analytics-logistica/README.md`](../trilha-dados-analytics-logistica/README.md) | Aqui: definição de KPI e trade-off; visualização e modelagem avançada ficam em Dados. |
+| Lean, PMO e mudança | [`../trilha-melhoria-continua-e-processos/README.md`](../trilha-melhoria-continua-e-processos/README.md) | Aqui: fundamentos conceituais; execução de melhoria e gestão de projeto ficam na trilha específica. |
+| Estratégia avançada (rede, SRM, Logística 4.0) | [`../trilha-logistica-estrategica/README.md`](../trilha-logistica-estrategica/README.md) | Esta trilha prepara base de vocabulário e métricas para evolução ao nível especialista. |
+
+---
+
 ## Módulos e pastas
 
 | Ordem | Pasta | Foco |
@@ -52,6 +63,26 @@ Esta trilha é majoritariamente de **processo e decisão**. Para manter o fio co
 - **Pedagogia:** objetivos mensuráveis por módulo incluem diagramas de fluxo, bullwhip simplificado, erro de previsão, reconciliação S&OP e business case de custo total versus KPIs; atividades sugeridas incluem mapas conceituais, planilhas curtas e simulação de rodada S&OP.
 - **Alinhamento de marca:** o melhor gancho natural a “stack” está em **S&OP/MRP** e em **KPIs com definição operacional**; SCM e fundamentos ganham relevância com **colaboração digital** (portais, rastreio, EDI/API em visão conceitual).
 - **Lacunas conscientes:** profundidade em ferramentas fica nas outras trilhas; esta trilha prepara o vocabulário e os trade-offs.
+
+---
+
+## Projeto integrador (opcional)
+
+**Cenário TechLar (fictício):**
+
+1. Mapear fluxo ponta a ponta (pedido → entrega) e destacar 3 pontos de decisão logística.
+2. Construir mini-previsão para 1 família de produto com erro explícito e hipótese de revisão.
+3. Simular reconciliação S&OP com conflito entre vendas e operações.
+4. Fechar recomendação com 2 KPIs e 1 trade-off (serviço, custo ou capital).
+
+**Rubrica sugerida:** clareza de fluxo, coerência numérica, qualidade da reconciliação e justificativa de trade-off.
+
+---
+
+## Avaliação sugerida
+
+- **Formativa:** 2–3 perguntas por aula focando interpretação e decisão.
+- **Somativa:** quiz de 12–16 itens + apresentação curta do projeto integrador.
 
 ---
 

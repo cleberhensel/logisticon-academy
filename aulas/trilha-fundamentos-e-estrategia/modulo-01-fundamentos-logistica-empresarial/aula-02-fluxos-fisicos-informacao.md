@@ -1,5 +1,30 @@
 # Fluxos físicos e de informação — quando o caminhão é só a ponta visível do iceberg
 
+## Objetivos e resultado de aprendizagem
+
+Ao final da aula, o aluno será capaz de mapear fluxo físico e fluxo informacional, identificar pontos de latência e explicar como falhas de informação degradam serviço e custo.
+
+## Gancho (3–5 min)
+
+Pedido aprovado sem atualização de estoque real: o caminhão sai “no prazo”, mas chega incompleto.
+
+## Mapa do conteúdo
+
+- Conceito de fluxo físico vs. fluxo de informação.
+- Sincronização entre pedido, separação, expedição e entrega.
+- Efeitos de atraso informacional.
+- Boas práticas para reduzir ruído de operação.
+
+## KPIs e decisão
+
+- Tempo de ciclo do pedido.
+- Acurácia de estoque e de cadastro.
+- Taxa de retrabalho operacional.
+
+## Ponte
+
+Conecta com [Tecnologia e sistemas](../../trilha-tecnologia-e-sistemas/README.md) para integração e rastreabilidade.
+
 Quase toda gente já viveu a seguinte situação: o rastreador diz **“saiu para entrega”**, mas o motorista só aparece no dia seguinte. Às vezes a culpa é do trânsito; com frequência maior, a culpa é **do dado** — o sistema marcou um evento que **ainda não ocorreu** ou marcou com **atraso** tal que a promessa ao cliente foi calculada em cima de um **fantasma**. Este capítulo trata desse fantasma com respeito: ele é um dos maiores produtores de **custo oculto** e de **desconfiança** entre áreas na empresa moderna.
 
 A **TechLar** volta aqui como fio condutor. Imagine um pedido B2B de utensílios para uma rede de lojas: o pedido é grande, a janela de recebimento na loja é curta, e o comercial prometeu **status em tempo real** porque o concorrente prometeu. A operação física pode ser competente; se o **estado do pedido** no portal for mentiroso, o cliente vivencia **atraso** mesmo quando o caminhão é pontual — e o NPS cai sobre a logística, não sobre o bug de integração.

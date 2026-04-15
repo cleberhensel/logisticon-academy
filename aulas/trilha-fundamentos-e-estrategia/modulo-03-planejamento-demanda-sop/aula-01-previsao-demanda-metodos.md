@@ -1,5 +1,30 @@
 # Previsão de demanda e métodos básicos — o número que não é promessa, é hipótese com prazo de validade
 
+## Objetivos e resultado de aprendizagem
+
+Ao final da aula, o aluno será capaz de explicar previsão como hipótese, comparar métodos básicos e interpretar erro para decisão de estoque e capacidade.
+
+## Gancho (3–5 min)
+
+Forecast usado como “número certo” gera culpa e decisões ruins; forecast usado como hipótese reduz surpresa.
+
+## Mapa do conteúdo
+
+- Papel da previsão na cadeia.
+- Métodos básicos e contexto de uso.
+- Erro de previsão e leitura operacional.
+- Governança de revisão.
+
+## KPIs e decisão
+
+- MAPE ou erro absoluto médio.
+- Viés de previsão por família.
+- Impacto no nível de serviço e estoque.
+
+## Ponte
+
+Conecta com [S&OP](aula-03-sop-processo-alinhamento.md) para reconciliação mensal.
+
 Há empresas em que o forecast virou **instrumento de culpa**: na segunda-feira, alguém aponta para uma célula e pergunta “por que errou?”, como se erro fosse **vício** e não **propriedade** do problema. A tradição acadêmica e profissional séria — a que você encontra em *Forecasting: Principles and Practice*, de Hyndman e Athanasopoulos (OTexts, https://otexts.com/fpp3/) — trata previsão com a mesma sobriedade com que trata **controle de qualidade**: define método, estima erro, documenta suposições, revisa. Esta aula não substitui o livro; dá **linguagem** para você conversar com operações, finanças e comercial sem confundir **precisão estética** com **decisão robusta**.
 
 Usaremos de novo a **TechLar** (e-commerce fictício de utilidades, CD no interior, campanhas agressivas). Sempre que aparecer “TechLar”, pense na empresa que você conhece: o mecanismo é o mesmo.

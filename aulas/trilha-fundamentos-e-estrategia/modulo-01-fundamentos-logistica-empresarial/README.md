@@ -4,6 +4,10 @@
 
 ---
 
+## Resultado do módulo
+
+Ao final do módulo, o aluno consegue explicar o papel da logística na empresa de ponta a ponta, mapear fluxos físico-informacionais e justificar decisões com trade-offs de serviço, custo, capital e risco.
+
 ## Objetivos de aprendizagem (mensuráveis)
 
 1. Explicar, com um diagrama simples, o que entra e o que sai da logística da empresa (materiais, informação, dinheiro).
@@ -24,7 +28,7 @@
 
 ---
 
-## Erros comuns de alunos
+## Erros comuns do módulo
 
 - Reduzir logística a “caminhão” ou só a “estoque”.
 - Ignorar o fluxo de informação (pedido, previsão, confirmação).
@@ -43,3 +47,10 @@
 ## Caso-base para discussão
 
 Distribuidora regional com pedidos diários ao varejo e picos sazonais: mapear fluxos CD → lojas e de informação (pedido, separação, expedição) e explicitar uma prioridade entre prazo de entrega e custo de armazenagem.
+
+---
+
+## Ligações
+
+- [Módulo 2 — Supply Chain Management](../modulo-02-supply-chain-management/README.md)
+- [Trilha Dados e analytics](../../trilha-dados-analytics-logistica/README.md)

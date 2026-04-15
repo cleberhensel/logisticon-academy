@@ -1,5 +1,30 @@
 # Nível de serviço e KPIs logísticos — a métrica bonita que, sem dicionário, vira decoração de parede
 
+## Objetivos e resultado de aprendizagem
+
+Ao final da aula, o aluno será capaz de definir KPIs logísticos com dicionário operacional, evitar incentivos perversos e usar métricas para decisão e melhoria contínua.
+
+## Gancho (3–5 min)
+
+Painel com dezenas de indicadores sem ação quase sempre indica definição ruim, dono ausente ou métrica mal desenhada.
+
+## Mapa do conteúdo
+
+- Definição operacional de KPI.
+- OTIF, fill rate, lead time e contexto de uso.
+- Métrica de processo vs. resultado.
+- Governança de decisão baseada em indicador.
+
+## KPIs e decisão
+
+- OTIF com definição contratual.
+- Fill rate por cliente/canal.
+- Lead time ponta a ponta e variabilidade.
+
+## Ponte
+
+Conecta com [Dados e analytics](../../trilha-dados-analytics-logistica/README.md) para visualização e governança de medição.
+
 Trinta KPIs no painel e **ninguém age** quase sempre significa uma de três coisas: **falta definição operacional** (cada área mede “no prazo” de um jeito), falta **dono** com poder de mudar processo, ou os KPIs **premiam** comportamento errado — por exemplo, “despachar no dia” sem “entregar completo” ou sem **POD** válido. Bowersox et al. tratam desempenho logístico como sistema; Chopra e Meindl conectam serviço a **drivers** de projeto de cadeia. A literatura de *retail compliance* popularizou OTIF como **linguagem de multa** entre grandes e fornecedores — o que é útil pedagogicamente: **OTIF é contrato**, não aura.
 
 ---

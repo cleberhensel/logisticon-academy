@@ -4,6 +4,10 @@
 
 ---
 
+## Resultado do módulo
+
+Ao final do módulo, o aluno consegue estruturar custo total logístico, definir KPIs com dicionário operacional e propor decisões de serviço com impacto financeiro explícito.
+
 ## Objetivos de aprendizagem (mensuráveis)
 
 1. Decompor custos de transporte, armazenagem e capital em estoque numa visão simplificada de P&L da cadeia.
@@ -24,7 +28,7 @@
 
 ---
 
-## Erros comuns de alunos
+## Erros comuns do módulo
 
 - Otimizar só o frete e ignorar estoque ou atraso.
 - Confundir custo unitário com custo do sistema (pedidos pequenos versus grandes).
@@ -43,3 +47,10 @@
 ## Caso-base para discussão
 
 Troca de transportadora para frete mais barato com lead time maior: estimar impacto em estoque de segurança e em OTIF; recomendar opção com números e hipóteses explícitas.
+
+---
+
+## Ligações
+
+- [Trilha Dados e analytics](../../trilha-dados-analytics-logistica/README.md)
+- [Trilha Automação e digitalização](../../trilha-automacao-e-digitalizacao/README.md)

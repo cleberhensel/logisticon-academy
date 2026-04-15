@@ -33,7 +33,7 @@ Gerentes de supply chain, compras estratégicas, planejamento de rede e PMO de e
 | RPA, Python, ML prático | Automação e digitalização | Aqui: casos de uso, governança e maturidade; implementação fica na outra trilha. |
 | Lean / projetos | Melhoria contínua | Redesign de rede pode citar *charter*/WBS; não repetir DMAIC/VSM como núcleo. |
 
-**Pontes úteis:** [Melhoria contínua](../trilha-melhoria-continua-e-processos/README.md) (projeto de mudança); [Tecnologia](../trilha-tecnologia-e-sistemas/README.md) (cadastros e integração).
+**Pontes úteis:** [Melhoria contínua](../trilha-melhoria-continua-e-processos/README.md) (projeto de mudança); [Tecnologia](../trilha-tecnologia-e-sistemas/README.md) (cadastros e integração); [Automação e digitalização](../trilha-automacao-e-digitalizacao/README.md) (RPA, Python, ML operacional e transformação digital).
 
 ---
 

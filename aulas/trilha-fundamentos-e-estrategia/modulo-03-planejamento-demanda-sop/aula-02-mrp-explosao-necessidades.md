@@ -1,5 +1,30 @@
 # MRP e explosão de necessidades — a máquina do tempo que só funciona se o calendário e a lista forem verdade
 
+## Objetivos e resultado de aprendizagem
+
+Ao final da aula, o aluno será capaz de explicar a lógica do MRP, relacionar BOM/LT/MPS ao plano de materiais e identificar as principais causas de distorção no resultado.
+
+## Gancho (3–5 min)
+
+“O sistema pediu demais” geralmente significa parâmetro errado, não erro do conceito de MRP.
+
+## Mapa do conteúdo
+
+- Conceito de demanda dependente.
+- Entradas críticas do MRP.
+- Explosão de necessidades e calendário.
+- Erros comuns de parametrização.
+
+## KPIs e decisão
+
+- Aderência do plano de materiais.
+- Frequência de replanejamento emergencial.
+- Ruptura de componente crítico.
+
+## Ponte
+
+Conecta com [Tecnologia e sistemas](../../trilha-tecnologia-e-sistemas/README.md) para governança de cadastro.
+
 Joseph Orlicky (*Material Requirements Planning*, McGraw-Hill, 1975) popularizou a ideia de que necessidades dependentes podem ser **calculadas** a partir de estrutura e tempos — revolucionário na época, banal hoje porque está **dentro** de todo ERP decente. O perigo moderno é outro: **desrespeitar** a lógica por achismo operacional — “o sistema pediu dez mil, mas eu sei que é demais”. Talvez você saiba; então **LT**, **BOM**, **lote** ou **MPS** estão mentindo. O MRP não “insiste” por teimosia; **reflete** o que foi digitado.
 
 Usaremos **MetalRio** (fictícia, montadora de kits de fixação para móveis) para texturizar explosão e calendário — substitua pela sua realidade.

@@ -1,5 +1,30 @@
 # S&OP e alinhamento — do calendário de reuniões ao plano único que finanças reconhece
 
+## Objetivos e resultado de aprendizagem
+
+Ao final da aula, o aluno será capaz de descrever o ciclo S&OP, mediar conflito entre áreas e propor plano único com hipóteses e riscos explícitos.
+
+## Gancho (3–5 min)
+
+Vendas, operações e finanças com três versões de verdade criam decisões contraditórias e custo extra.
+
+## Mapa do conteúdo
+
+- Propósito e etapas do S&OP.
+- Papéis e artefatos de reconciliação.
+- Gestão de conflito e decisão.
+- Disciplina de revisão contínua.
+
+## KPIs e decisão
+
+- Aderência ao plano S&OP.
+- Precisão de volume/mix por ciclo.
+- Impacto do plano em serviço e capital.
+
+## Ponte
+
+Conecta com [Custos e performance](../modulo-04-custos-logisticos-performance/README.md) para avaliação econômico-operacional.
+
 S&OP não nasceu como “mais uma reunião”. Nasceu como **antídoto à planilha dupla**: vendas com uma verdade, operações com outra, finanças com uma terceira — e o fornecedor ouvindo **todas** ao mesmo tempo por e-mail encaminhado. O processo tenta impor **cadência**, **artefato** e **dono** — três coisas pouco glamourosas que substituem **heroísmo** e **improviso**.
 
 **MetalRio** e **TechLar** aparecem como **espelhos**: indústria com **capacidade dura** versus varejo com **volatilidade de campanha**. O mecanismo de alinhamento é o mesmo: **narrativa única** sobre o futuro próximo.

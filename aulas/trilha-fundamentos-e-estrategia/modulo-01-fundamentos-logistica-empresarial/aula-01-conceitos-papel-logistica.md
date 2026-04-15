@@ -1,5 +1,30 @@
 # Conceitos e papel da logística na empresa — da promessa ao custo que ninguém vê
 
+## Objetivos e resultado de aprendizagem
+
+Ao final da aula, o aluno será capaz de diferenciar logística e supply chain, mapear o papel da logística no desempenho da empresa e explicar trade-offs básicos de serviço, custo e capital.
+
+## Gancho (3–5 min)
+
+A promessa comercial (“entrega em 24h”) confronta a realidade operacional (capacidade, estoque, doca, transporte).
+
+## Mapa do conteúdo
+
+- Definições essenciais (SCM e logística).
+- Papel transversal da logística na empresa.
+- Trade-offs estruturais da operação.
+- Base de decisão para os próximos módulos.
+
+## KPIs e decisão
+
+- Nível de serviço (OTIF/fill rate em definição operacional).
+- Lead time de pedido e variabilidade.
+- Custo logístico total e capital em estoque.
+
+## Ponte
+
+Próximo passo: [Módulo 2 — Supply Chain Management](../modulo-02-supply-chain-management/README.md).
+
 Há um tipo de frase que aparece em slides de marketing e depois “cai” no chão da empresa como se fosse problema exclusivo de expedição: *“Entrega em vinte e quatro horas em todo o país.”* Em geral, quem escreveu a frase estava pensando em **conversão** e em **branding**; quem ouviu no corredor foi o gerente de armazém, que imediatamente imagina **mais caminhões**, **mais horas de picking** e **mais stress* — e ninguém, ainda, falou em **malha**, em **estoque de posição**, em **forecast**, em **capacidade de doca** ou em **custo de capital**. Esta desconexão não é acidente: ela nasce de uma confusão antiga entre **promessa** (o que o mercado ouve) e **sistema físico-informacional-financeiro** (o que a empresa realmente consegue sustentar de forma repetível). A logística empresarial, quando bem ensinada, é justamente a disciplina que **traduz promessa em restrições e restrições em decisões** — sem mágica e sem heroísmo solitário na doca.
 
 Ao longo deste texto vamos usar, de forma recorrente, uma empresa fictícia chamada **TechLar** (e-commerce de utilidades domésticas, um centro de distribuição no interior, forte sazonalidade de campanhas). Ela não existe para ser memorizada; existe para dar **textura** aos conceitos. Sempre que você ler “a TechLar fez X”, tente substituir mentalmente pela empresa que você conhece: o mecanismo cognitivo é o mesmo.

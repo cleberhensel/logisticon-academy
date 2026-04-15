@@ -1,5 +1,30 @@
 # Cadeia de suprimentos ponta a ponta — além do muro da fábrica
 
+## Objetivos e resultado de aprendizagem
+
+Ao final da aula, o aluno será capaz de desenhar a cadeia ponta a ponta, interpretar dependências entre atores e explicar efeitos de otimização local sobre o desempenho global.
+
+## Gancho (3–5 min)
+
+A área “bate meta” local, mas a cadeia inteira perde nível de serviço e margem.
+
+## Mapa do conteúdo
+
+- Definição e escopo de SCM.
+- Leitura de cadeia por processos (SCOR).
+- Push, pull e ponto de desacoplamento.
+- Conflitos de objetivo entre áreas.
+
+## KPIs e decisão
+
+- Fill rate e OTIF em visão de cadeia.
+- Lead time ponta a ponta.
+- Variabilidade de pedido (bullwhip).
+
+## Ponte
+
+Conecta com [Planejamento de Demanda (S&OP)](../modulo-03-planejamento-demanda-sop/README.md).
+
 Quando alguém diz “supply chain” em tom solene, muitas vezes o desenho mental ainda é uma **caixa** com setas entrando e saindo. A SCM real é mais parecida com um **ecossistema**: fornecedores de vários *tiers*, transportadoras, armazéns próprios e de terceiros, canais on-line e físicos, **informação** que atravessa fronteiras e **dinheiro** que atravessa mais devagar que o produto. O CSCMP define SCM como planejamento e gestão de **todas** as atividades desde *sourcing* e *procurement* até a logística, incluindo coordenação com parceiros e integração oferta–demanda **dentro e entre** empresas — definição que, pela própria sintaxe, **proíbe** o muro da fábrica como limite mental.
 
 ---

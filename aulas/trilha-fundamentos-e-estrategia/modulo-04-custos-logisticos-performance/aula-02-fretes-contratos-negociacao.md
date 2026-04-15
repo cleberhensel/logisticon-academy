@@ -1,5 +1,30 @@
 # Fretes, contratos e negociação — quando o preço bonito esconde a cauda do atraso e o POD que nunca chegou
 
+## Objetivos e resultado de aprendizagem
+
+Ao final da aula, o aluno será capaz de comparar propostas de frete em visão de custo total, ler cláusulas críticas de contrato e negociar com foco em serviço e risco.
+
+## Gancho (3–5 min)
+
+Tarifa menor pode custar mais quando lead time e evidência de entrega pioram.
+
+## Mapa do conteúdo
+
+- Estrutura de preço e serviço em transporte.
+- Cláusulas contratuais críticas (SLA, POD, penalidades).
+- Vetor de negociação além da tarifa.
+- Risco operacional e compliance do frete.
+
+## KPIs e decisão
+
+- OTIF por transportadora.
+- Custo por entrega efetiva.
+- Taxa de POD válido e incidência de contestação.
+
+## Ponte
+
+Conecta com [Nível de serviço e KPIs](aula-03-nivel-servico-kpis-logisticos.md) para governança de performance.
+
 A frase “ganhamos desconto no frete” é, muitas vezes, o primeiro capítulo de um drama em três atos: no segundo, **OTIF** cai; no terceiro, **CS** e **reenvio** comem a economia. Christopher descreve redes que competem por **confiabilidade** tanto quanto por preço; Bowersox et al. reforçam a leitura integrada de desempenho logístico; Chopra e Meindl dão o arcabouço de *drivers* — instalações, estoque, transporte, informação — para lembrar que **transporte** não flutua só.
 
 Na **TechLar**, o time comercial adora comparar **tarifa por pacote** entre transportadoras; o time de operações adora comparar **P95 de coleta** e **taxa de POD válido**. Esta aula ensina a **sentar os dois na mesma mesa** com um **vetor** de decisão.

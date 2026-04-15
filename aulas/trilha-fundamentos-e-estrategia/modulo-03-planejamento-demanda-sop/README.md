@@ -4,6 +4,10 @@
 
 ---
 
+## Resultado do módulo
+
+Ao final do módulo, o aluno consegue construir uma leitura integrada de previsão, MRP e S&OP, reconciliando conflitos entre vendas e operações com critérios explícitos de capacidade, estoque e serviço.
+
 ## Objetivos de aprendizagem (mensuráveis)
 
 1. Diferenciar demanda independente e dependente e escolher a abordagem de planejamento adequada.
@@ -24,7 +28,7 @@
 
 ---
 
-## Erros comuns de alunos
+## Erros comuns do módulo
 
 - Tratar previsão como “número certo” em vez de intervalo de erro mais política de revisão.
 - Reduzir S&OP a reunião de vendas ou só à fábrica.
@@ -43,3 +47,10 @@
 ## Caso-base para discussão
 
 Mesmo trimestre com números diferentes entre vendas (otimistas) e operações (conservadores): roteiro de reconciliação S&OP com hipóteses, riscos e impacto na compra de matéria-prima.
+
+---
+
+## Ligações
+
+- [Módulo 4 — Custos Logísticos e Performance](../modulo-04-custos-logisticos-performance/README.md)
+- [Trilha Tecnologia e sistemas](../../trilha-tecnologia-e-sistemas/README.md)

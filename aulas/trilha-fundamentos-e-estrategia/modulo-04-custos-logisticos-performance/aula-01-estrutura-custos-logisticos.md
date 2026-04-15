@@ -1,5 +1,30 @@
 # Estrutura de custos logísticos — o iceberg que finanças sente antes do frete aparecer na fatura
 
+## Objetivos e resultado de aprendizagem
+
+Ao final da aula, o aluno será capaz de decompor custo logístico total, diferenciar custo visível de oculto e justificar decisões sem subotimizar a cadeia.
+
+## Gancho (3–5 min)
+
+Redução de frete na fatura pode piorar devolução, estoque e serviço quando o sistema inteiro não é considerado.
+
+## Mapa do conteúdo
+
+- Estrutura de custo total em logística.
+- Custo visível, custo oculto e causalidade.
+- Subotimização e visão sistêmica.
+- Leitura financeira para tomada de decisão.
+
+## KPIs e decisão
+
+- Custo logístico total por pedido.
+- Custo de devolução e retrabalho.
+- Giro de estoque e capital empregado.
+
+## Ponte
+
+Conecta com [Fretes e negociação](aula-02-fretes-contratos-negociacao.md) para aplicação contratual.
+
 Há um tipo de “vitória” que aparece no e-mail da diretoria na sexta-feira: **“negociamos 7% de redução no frete”**. Segunda-feira, o armazém relata **mais devoluções**, o atendimento reclama de **pedidos incompletos** e o estoque médio **subiu** porque alguém trocou **frequência** por **lote** para acomodar o novo padrão de transporte. Isto não é paradoxo místico; é **subotimização** — otimizar um elo **às custas** do sistema. Bowersox, Closs, Cooper e Bowersox (*Supply Chain Logistics Management*, McGraw-Hill) insistem na logística como **processo medido** em custo **e** serviço; Christopher (*Logistics and Supply Chain Management*, Pearson) lembra que a competição é frequentemente **cadeia contra cadeia**; Ballou (*Business Logistics / Supply Chain Management*, Pearson) dá ferramentas clássicas de engenharia econômica aplicada à logística. Você não precisa decorar; precisa de **vocabulário** para não confundir **fatura** com **economia**.
 
 A **TechLar** volta como ancoragem: e-commerce com **dois canais** (site próprio e marketplace). O mesmo SKU pode ter **margem líquida** radicalmente diferente quando se abre o *black box* logístico.
