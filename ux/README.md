@@ -4,8 +4,8 @@ Pasta de **síntese UX/UI e contexto de produto** derivada do repositório (`dis
 
 | Documento | Conteúdo |
 |-----------|----------|
-| [inventario-e-contexto-ux-ui.md](./inventario-e-contexto-ux-ui.md) | Inventário de requisitos e fontes, MVP, alternativas de UI/stack, próximos passos |
-| [happy-paths-mvp-e-criterios-acessibilidade.md](./happy-paths-mvp-e-criterios-acessibilidade.md) | Happy paths do MVP (E01–E05, E08), diagramas, matriz de telas Carbon, WCAG 2.2 AA por fluxo crítico |
+| [inventario-e-contexto-ux-ui.md](inventario-e-contexto-ux-ui.md) | Inventário de requisitos e fontes, MVP, alternativas de UI/stack, próximos passos |
+| [happy-paths-mvp-e-criterios-acessibilidade.md](happy-paths-mvp-e-criterios-acessibilidade.md) | Happy paths do MVP (E01–E05, E08), diagramas, matriz de telas Carbon, WCAG 2.2 AA por fluxo crítico |
 
 **Documentação de UI (telas, tokens, componentes):** [../ui/README.md](../ui/README.md).
 

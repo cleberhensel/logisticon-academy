@@ -157,8 +157,8 @@ Problema: **como estruturar IA e componentes** sem código neste repo.
 ## 10. Próximos passos sugeridos (para UX e produto)
 
 1. **Validar com stakeholder** a matriz trilha × nível × idioma e o pacote mínimo do catálogo MVP (`discovery/base.md`, secção 6). *(Em avaliação.)*  
-2. **Produzir mapa de telas** (happy path B2C) ligando a componentes Carbon e a user stories E01–E05 (P0). **Feito:** [happy-paths-mvp-e-criterios-acessibilidade.md](./happy-paths-mvp-e-criterios-acessibilidade.md) (Parte I).  
-3. **Definir critérios de acessibilidade** (ex.: WCAG 2.2 AA para fluxos críticos) e registar no repo de implementação. **Feito:** [happy-paths-mvp-e-criterios-acessibilidade.md](./happy-paths-mvp-e-criterios-acessibilidade.md) (Parte II).  
+2. **Produzir mapa de telas** (happy path B2C) ligando a componentes Carbon e a user stories E01–E05 (P0). **Feito:** [happy-paths-mvp-e-criterios-acessibilidade.md](happy-paths-mvp-e-criterios-acessibilidade.md) (Parte I).  
+3. **Definir critérios de acessibilidade** (ex.: WCAG 2.2 AA para fluxos críticos) e registar no repo de implementação. **Feito:** [happy-paths-mvp-e-criterios-acessibilidade.md](happy-paths-mvp-e-criterios-acessibilidade.md) (Parte II).  
 4. **Sincronizar** este inventário quando `SPEC-00` ou `stack-e-padroes.md` forem alterados.
 
 ---
