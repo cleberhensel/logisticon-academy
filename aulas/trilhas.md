@@ -71,7 +71,9 @@ Foco em **arquitetura da cadeia**, **política de fornecimento**, **SRM** e **li
 
 ### Trilha - Automação e digitalização
 
-Outro eixo de **diferenciação** (RPA, código leve, IA, transformação).
+Outro eixo de **diferenciação** (RPA, código leve, IA, transformação): **implementação** prática e mudança organizacional — complementa a [Logística estratégica](trilha-logistica-estrategica/README.md) no eixo *digital* (maturidade e governança).
+
+**Material:** [trilha-automacao-e-digitalizacao](trilha-automacao-e-digitalizacao/README.md) (12 aulas em Markdown).
 
 | modulo | Objetivo em uma linha |
 |--------|------------------------|

@@ -27,6 +27,8 @@ flowchart TB
 | **[plan/](plan/)** | MVP (SPEC-00), specs por tema (SPEC-01…08), épicos, registo DEV-001…049, user stories e tasks `TSK-DEV-*`, arquitetura alvo |
 | **[apresentacao/](apresentacao/)** | Narrativa executiva: 13 tópicos de negócio/produto/jornada, índice e README com mapas Mermaid |
 | **[scripts/](scripts/)** | Ferramentas de apoio (ex.: `enrich_plan_tasks.py` para enriquecimento em lote de tasks) |
+| **[UX/](ux)** | Inventário de contexto, happy paths MVP, critérios de acessibilidade |
+| **[ui/](ui/)** | Especificação de UI para frontend: tokens Carbon, componentes, mapa de rotas, fichas por tela |
 
 ---
 
@@ -37,6 +39,7 @@ flowchart TB
 | **Direção / negócio** | [apresentacao/README.md](apresentacao/README.md) → [apresentacao/00-indice.md](apresentacao/00-indice.md) → tópicos 01–07 |
 | **Produto / PM** | [plan/specs/SPEC-00-visao-geral-mvp.md](plan/specs/SPEC-00-visao-geral-mvp.md) → [plan/user-stories/README.md](plan/user-stories/README.md) → [plan/features/registro-de-features.md](plan/features/registro-de-features.md) |
 | **Engenharia** | [plan/specs/README.md](plan/specs/README.md) (matriz SPEC ↔ épico ↔ tasks) → SPEC do tema → `plan/user-stories/E../US-../tasks/TSK-DEV-*.md` |
+| **Frontend (UI)** | [ui/README.md](ui/README.md) → tokens, inventário de componentes, fichas em `ui/telas/`; stack em [plan/architecture/stack-e-padroes.md](plan/architecture/stack-e-padroes.md) |
 | **Conteúdo / pedagógico** | [discovery/base.md](discovery/base.md) (níveis, trilhas, rotas nomeadas) |
 | **Mercado / posicionamento** | [discovery/pesquisa/](discovery/pesquisa/) (análises 01–06) |
 

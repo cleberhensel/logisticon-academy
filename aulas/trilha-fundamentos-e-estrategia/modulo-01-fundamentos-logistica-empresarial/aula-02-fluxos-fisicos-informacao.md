@@ -2,28 +2,30 @@
 
 ## Objetivos e resultado de aprendizagem
 
-Ao final da aula, o aluno será capaz de mapear fluxo físico e fluxo informacional, identificar pontos de latência e explicar como falhas de informação degradam serviço e custo.
+Ao final da aula, o aluno será capaz de:
 
-## Gancho (3–5 min)
+- **Mapear** fluxo físico e fluxo informacional como dois sistemas acoplados.
+- **Identificar** pontos de latência informacional e seus efeitos em serviço e custo.
+- **Diferenciar** lead time físico de **latência de visibilidade**.
+- **Reconhecer** as principais armadilhas de integração ERP/WMS/TMS no Brasil (eventos NF-e/CT-e/MDF-e).
+- **Propor** SLAs de informação por estado do pedido.
 
-Pedido aprovado sem atualização de estoque real: o caminhão sai “no prazo”, mas chega incompleto.
+**Duração sugerida:** 60–75 min.
+**Pré-requisitos:** [Aula 1.1 — Conceitos e papel da logística](aula-01-conceitos-papel-logistica.md).
 
 ## Mapa do conteúdo
 
-- Conceito de fluxo físico vs. fluxo de informação.
-- Sincronização entre pedido, separação, expedição e entrega.
-- Efeitos de atraso informacional.
-- Boas práticas para reduzir ruído de operação.
-
-## KPIs e decisão
-
-- Tempo de ciclo do pedido.
-- Acurácia de estoque e de cadastro.
-- Taxa de retrabalho operacional.
+- Fluxo físico (direto e reverso) sem romantismo.
+- Fluxo de informação como sistema nervoso (ERP/OMS/WMS/TMS).
+- Sequência mínima pedido → entrega e estados do pedido.
+- Latência física vs. latência de informação.
+- Efeito chicote começa no dado.
+- Eventos fiscais BR (NF-e, CT-e, MDF-e, eventos SEFAZ).
+- Caso TechLar B2B — “rastreio verde, caminhão parado”.
 
 ## Ponte
 
-Conecta com [Tecnologia e sistemas](../../trilha-tecnologia-e-sistemas/README.md) para integração e rastreabilidade.
+Conecta com [Tecnologia e sistemas](../../trilha-tecnologia-e-sistemas/README.md) para integração e rastreabilidade; com [SCM — integração e colaboração](../modulo-02-supply-chain-management/aula-02-integracao-colaboracao-cadeia.md) para o efeito chicote em rede; com [KPIs e nível de serviço](../modulo-04-custos-logisticos-performance/aula-03-nivel-servico-kpis-logisticos.md) para definição operacional de “no prazo”.
 
 Quase toda gente já viveu a seguinte situação: o rastreador diz **“saiu para entrega”**, mas o motorista só aparece no dia seguinte. Às vezes a culpa é do trânsito; com frequência maior, a culpa é **do dado** — o sistema marcou um evento que **ainda não ocorreu** ou marcou com **atraso** tal que a promessa ao cliente foi calculada em cima de um **fantasma**. Este capítulo trata desse fantasma com respeito: ele é um dos maiores produtores de **custo oculto** e de **desconfiança** entre áreas na empresa moderna.
 
@@ -112,6 +114,38 @@ EDI, APIs, portais de fornecedor, ASN (*Advance Ship Notice*), agendamento de do
 
 ---
 
+## Eventos fiscais brasileiros: o fluxo de informação que o Estado obriga
+
+Há um pedaço do fluxo informacional que, no Brasil, **não é opcional**. A SEFAZ orquestra um carrossel de eventos eletrônicos cujo objetivo originário é fiscal, mas cuja **subutilização operacional** custa caro. Vale conhecer (visão funcional, não fiscal):
+
+- **NF-e** (Modelo 55): autoriza a saída da mercadoria; gera **chave de 44 dígitos** que segue a carga até o destino. Eventos importantes: **autorização**, **cancelamento** (até 24h em regra geral), **carta de correção**, **manifestação do destinatário** (confirmação, ciência, operação não realizada, desconhecimento).
+- **CT-e** (Modelo 57): autoriza o **frete**, identifica tomador, transportador, valor do serviço, ICMS de transporte, GRIS, ad valorem. Liga-se à(s) NF-e(s) transportada(s).
+- **MDF-e** (Modelo 58): manifesto da **viagem** — agrega todos os CT-e/NF-e em um veículo + motorista + percurso; obrigatório para transporte interestadual e intermunicipal de carga própria/terceiros.
+- **Eventos de transporte:** *averbação* de seguro, *registro de passagem* (RNTRC + pedágio eletrônico), encerramento do MDF-e na chegada.
+
+```mermaid
+sequenceDiagram
+  participant ERP
+  participant SEFAZ as SEFAZ (Autoridade)
+  participant TMS
+  participant Cliente
+  ERP->>SEFAZ: Autoriza NF-e (mercadoria)
+  SEFAZ-->>ERP: Chave NF-e + Protocolo
+  TMS->>SEFAZ: Autoriza CT-e (frete) referenciando NF-e
+  SEFAZ-->>TMS: Chave CT-e + Protocolo
+  TMS->>SEFAZ: Autoriza MDF-e (viagem)
+  SEFAZ-->>TMS: Chave MDF-e + Protocolo
+  TMS->>Cliente: Mercadoria + DACTE/DANFE
+  Cliente->>SEFAZ: Manifestação do destinatário (Conf/Ciência/Desconhecido/NãoRealizada)
+  TMS->>SEFAZ: Encerramento MDF-e
+```
+
+**Por que isso importa para fluxo de informação?** Porque cada evento é uma **fonte gratuita e confiável** de status. Empresas que **não** usam os eventos da SEFAZ como gatilho de status para o cliente B2B continuam a depender de e-mail manual, mesmo tendo um sinal **autenticado pelo Estado** disponível. A **manifestação do destinatário** (em especial **“ciência”** e **“confirmação”**), por exemplo, é evidência **digital** de recebimento que **antecede** ou **complementa** o POD físico — e poucos times usam.
+
+> **Armadilha clássica brasileira:** confiar **só** no “status do TMS” quando o **CT-e** já foi cancelado por divergência de CFOP/peso. O caminhão pode estar a caminho com documento **sem validade fiscal**, sujeito a **apreensão** em barreira interestadual. Integração SEFAZ → TMS não é luxo; é **compliance + visibilidade**.
+
+---
+
 ## Caso integrado — “rastreio verde, caminhão parado” (TechLar, B2B)
 
 **Fatos:** integração WMS→TMS marca “em trânsito” ao **gerar documento**, não ao **atravessar portão**; comercial informa cliente com base no portal; janela de recebimento na loja é estreita.
@@ -122,19 +156,70 @@ EDI, APIs, portais de fornecedor, ASN (*Advance Ship Notice*), agendamento de do
 
 ---
 
+## O que vira dado no sistema (mapa de eventos × campos)
+
+| Evento físico | Quem registra | Onde vira dado | Latência saudável | Latência tóxica |
+|---------------|---------------|----------------|--------------------|------------------|
+| Pedido entrou | Canal/vendas | OMS/ERP — cabeçalho + linhas | < 1 min | > 30 min (cliente refresha o site) |
+| Reserva de estoque | OMS/ERP/WMS | Tabela de reserva por SKU/centro | < 5 min | > 1h (overbooking) |
+| Picking concluído | WMS via coletor | Onda concluída + container ID | tempo real | > 1h (pacote “sumido” no CD) |
+| NF-e autorizada | ERP/emissor | Chave NF-e + protocolo SEFAZ | < 5 min | > 30 min (caminhão parado na cancela) |
+| CT-e/MDF-e autorizados | TMS/emissor | Chaves CT-e e MDF-e | < 15 min | falha = caminhão sai sem CT-e válido |
+| Saída do CD (cerca/portão) | WMS/portaria | Evento *gate-out* | tempo real | > 30 min (status “em trânsito” mente) |
+| Trânsito | TMS + telemetria/rastreador | Geolocalização + checkpoints | 5–15 min | > 1h (cliente ouve “sem informação”) |
+| Entrega + POD | App motorista / TMS | POD digital (foto, assinatura, geo) | < 30 min | > 24h (financeiro não fatura, multa do varejo) |
+| Manifestação do destinatário | Cliente via SEFAZ | Status no portal SEFAZ | até 180 dias | atraso → ICMS-ST sem confirmação |
+
+---
+
+## KPIs e decisão (kit mínimo desta aula)
+
+| KPI | Pergunta que responde | Dono | Fonte | Cadência | Playbook de ação |
+|-----|------------------------|------|-------|----------|-------------------|
+| **Tempo de ciclo do pedido** (OCT) | Quanto demora pedido→entrega? | Logística | ERP+TMS | Diária | Identificar etapa-gargalo no histograma; campanha PDCA na pior etapa |
+| **Acurácia de inventário** (%) | O sistema reflete o físico? | WMS/Operações | WMS + inventário rotativo | Mensal | Inventário rotativo ABC; bloqueio de SKU para ATP até reconciliar |
+| **Latência de status** (min entre evento real e visível) | Quanto o portal “mente”? | TI + Operações | TMS + portal | Semanal | Auditar gatilhos de integração; corrigir parametrização |
+| **Taxa de retrabalho operacional** (%) | Quanto refazemos? | Operações | WMS (motivos) | Semanal | Top 3 motivos vão para A3 |
+| **% pedidos sem manifestação SEFAZ em D+15** | Cliente B2B confirma? | Fiscal + Comercial | Portal SEFAZ | Mensal | Régua automatizada de cobrança ao destinatário |
+| **% CT-e válido na chegada** | Compliance fiscal de transporte | Logística + Fiscal | TMS | Mensal | Fluxo de revalidação antes da expedição |
+
+---
+
+## Ferramentas e tecnologias relevantes
+
+| Necessidade | Pode começar em | Cresce para | Quando NÃO usar |
+|-------------|-----------------|-------------|------------------|
+| Integração ERP↔WMS↔TMS | Arquivos CSV/XML em horário fixo | Fila de mensagens (RabbitMQ/Kafka), API REST/Webhook | Volume baixíssimo onde planilha resolve |
+| Eventos SEFAZ | Manifestador manual no portal | TecnoSpeed, Migrate, Mastersaf, NDD ou módulos do ERP | Sem cultura de tratar evento — vira ruído |
+| Rastreio cliente | Link ao TMS do parceiro | Portal próprio (Intelipost, Frenet, Olist Tiny, Eu Entrego) | Status fonte não é confiável |
+| Telemetria | Rastreador básico do caminhão | Telemetria veicular + geocerca + integração TMS (Sascar, Onixsat, Cobli) | Frota terceira sem contrato de compartilhamento |
+| EDI B2B | Planilhas para grandes varejistas | EDI VAN (Neogrid, Nimbi), API moderna (REST/GraphQL) | Parceiro pequeno sem capacidade de aderir |
+
+---
+
 ## Exercícios
 
-1. Desenhe (papel ou ferramenta) o fluxo físico da sua empresa em **dez caixas** no máximo; depois, adicione **um evento de dados** entre cada caixa.  
-2. Explique em **um parágrafo** por que ERP único não elimina divergência físico-informacional.  
+1. Desenhe (papel ou ferramenta) o fluxo físico da sua empresa em **dez caixas** no máximo; depois, adicione **um evento de dados** entre cada caixa, marcando se a fonte é ERP, WMS, TMS ou SEFAZ.
+2. Explique em **um parágrafo** por que ERP único não elimina divergência físico-informacional.
 3. Liste **cinco** dados mínimos que deveriam circular entre TechLar e seu transportador principal.
+4. **Cenário BR:** o caminhão da TechLar é parado em barreira interestadual. O CT-e foi cancelado pela transportadora há 4h por divergência de peso. O motorista não sabe. Que **três** controles preventivos teriam evitado o evento?
 
-**Gabarito orientativo:** (2) ERP integra módulos, mas **disciplina operacional**, cadastro, UOM, vigência de BOM e cultura de evento continuam humanos e frágeis. (3) exemplo: ID de viagem, peso cubado, quantidade de volumes, janela, contato de recebimento, ocorrências.
+**Gabarito orientativo:** (2) ERP integra módulos, mas **disciplina operacional**, cadastro, UOM, vigência de BOM e cultura de evento continuam humanos e frágeis; ERP único também não cobre eventos do parceiro (transportadora, fornecedor) sem EDI/API. (3) exemplo: ID de viagem, peso cubado, quantidade de volumes, janela, contato de recebimento, ocorrências, chave CT-e. (4) bloqueio de saída sem CT-e válido confirmado por consulta SEFAZ; alerta automático ao motorista quando CT-e sofre evento de cancelamento; SLA de 30 min para reemissão e nova validação.
 
 ---
 
 ## Glossário express
 
-**ASN**, **POD**, **latência**, **WMS**, **TMS**, **OTIF** — volte ao glossário da aula anterior se precisar de definições base.
+- **ASN** (*Advance Ship Notice*): aviso eletrônico de embarque enviado ao cliente antes da chegada da carga (no Brasil, frequentemente derivado da NF-e + EDI).
+- **POD** (*Proof of Delivery*): comprovante de entrega válido (assinatura, foto, geolocalização).
+- **Latência:** tempo entre o **acontecimento real** e o **registro confiável visível** para quem decide.
+- **WMS** (*Warehouse Management System*): sistema de gestão de armazém — onda, separação, conferência, estoque por endereço.
+- **TMS** (*Transportation Management System*): sistema de gestão de transporte — roteirização, frete, CT-e, tracking.
+- **OTIF** (*On Time In Full*): % de pedidos no prazo e completos (definição contratual).
+- **NF-e / CT-e / MDF-e:** documentos fiscais eletrônicos brasileiros — mercadoria, transporte, manifesto da viagem.
+- **Manifestação do destinatário:** evento eletrônico via portal SEFAZ com 4 estados (confirmação, ciência, operação não realizada, desconhecimento).
+- **Pegging:** rastrear de onde vem uma necessidade ou ordem (cliente, ordem de venda, ordem de produção).
+- **EDI** (*Electronic Data Interchange*): troca estruturada de mensagens B2B (clássico) — ainda muito usado em varejo grande.
 
 ---
 
@@ -144,12 +229,25 @@ EDI, APIs, portais de fornecedor, ASN (*Advance Ship Notice*), agendamento de do
 2. CHRISTOPHER, M. *Logistics and Supply Chain Management*. Pearson, 2022. https://www.pearson.com/en-us/subject-catalog/p/logistics-and-supply-chain-management/P200000007134  
 3. CHOPRA, S.; MEINDL, P. *Supply Chain Management*. Pearson. https://www.pearson.com/en-us/subject-catalog/p/supply-chain-management-strategy-planning-and-operation/P200000012829  
 4. LEE, H. L.; PADMANABHAN, V.; WHANG, S. (1997). *Management Science*, 43(4), 546–558. https://doi.org/10.1287/mnsc.43.4.546  
-5. BOWERSOX, D. J.; et al. *Supply Chain Logistics Management*. McGraw-Hill. https://www.mheducation.com/highered/product/supply-chain-logistics-management-bowersox.html  
+5. BOWERSOX, D. J.; et al. *Supply Chain Logistics Management*. McGraw-Hill. https://www.mheducation.com/highered/product/supply-chain-logistics-management-bowersox.html
+6. SEFAZ — *Portal Nacional da NF-e*: https://www.nfe.fazenda.gov.br/portal/principal.aspx
+7. SEFAZ — *Portal Nacional do CT-e*: https://www.cte.fazenda.gov.br/
+8. SEFAZ — *Portal Nacional do MDF-e*: https://dfe-portal.svrs.rs.gov.br/Mdfe
+9. ABRALOG — Notas técnicas sobre integração logística: https://www.abralog.com.br/
+10. APQC — *Logistics Process Performance Benchmarks*: https://www.apqc.org/
 
 ---
 
 ## Síntese
 
-Fluxo físico sem informação alinhada gera **atividade sem valor**; informação bonita sem evento físico honesto gera **desconfiança**. A logística madura trata **estado do pedido** como **produto** — com SLA, teste e dono.
+Fluxo físico sem informação alinhada gera **atividade sem valor**; informação bonita sem evento físico honesto gera **desconfiança**. A logística madura trata **estado do pedido** como **produto** — com SLA, teste e dono. No Brasil, eventos da SEFAZ (NF-e, CT-e, MDF-e e manifestação do destinatário) são uma **camada de visibilidade** já paga e subutilizada — usá-la bem é diferencial competitivo barato.
 
 **Pergunta final:** qual evento da sua cadeia tem o maior **gap** entre “aconteceu” e “ficou visível”?
+
+---
+
+## Pontes para outras trilhas
+
+- [Trilha Tecnologia e Sistemas](../../trilha-tecnologia-e-sistemas/README.md) — integração ERP/WMS/TMS, EDI, manifestador.
+- [Trilha Dados e Analytics](../../trilha-dados-analytics-logistica/README.md) — medir latência de status, dashboards de processo.
+- [Trilha Melhoria Contínua](../../trilha-melhoria-continua-e-processos/README.md) — A3 sobre acurácia e retrabalho.
