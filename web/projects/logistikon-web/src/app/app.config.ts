@@ -16,8 +16,12 @@ export const appConfig: ApplicationConfig = {
       withComponentInputBinding(),
       withInMemoryScrolling({ scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled' })
     ),
-    // staticBffInterceptor PRIMEIRO: curto-circuita pedidos /api antes do auth/error.
-    provideHttpClient(withInterceptors([staticBffInterceptor, authInterceptor, errorInterceptor])),
+    // Ordem importa: authInterceptor injecta o header Authorization, errorInterceptor
+    // trata 401/403/5xx, e o staticBffInterceptor (último) curto-circuita /api já com
+    // o request enriquecido — como ele é o último a receber o request, é também o
+    // primeiro a emitir a resposta de volta para a cadeia, garantindo que erros do
+    // BFF passam pelo errorInterceptor.
+    provideHttpClient(withInterceptors([authInterceptor, errorInterceptor, staticBffInterceptor])),
     provideAnimations()
   ]
 };
