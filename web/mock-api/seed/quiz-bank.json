@@ -1,0 +1,63 @@
+{
+  "_default": {
+    "minScore": 70,
+    "maxAttempts": 3,
+    "questions": [
+      {
+        "id": "q1",
+        "stem": "Qual é a definição mais ampla de logística empresarial?",
+        "options": [
+          { "id": "a", "label": "Apenas transporte rodoviário entre fábrica e cliente final." },
+          { "id": "b", "label": "Coordenação de fluxos físicos, informacionais e financeiros para entregar valor ao cliente." },
+          { "id": "c", "label": "Sinónimo absoluto de marketing operacional." },
+          { "id": "d", "label": "Apenas armazenagem e gestão de stock." }
+        ],
+        "correctOptionId": "b"
+      },
+      {
+        "id": "q2",
+        "stem": "Qual trade-off é mais típico em decisões logísticas?",
+        "options": [
+          { "id": "a", "label": "Custo × cor do produto." },
+          { "id": "b", "label": "Velocidade × marca." },
+          { "id": "c", "label": "Custo × nível de serviço × capital empatado." },
+          { "id": "d", "label": "Não existem trade-offs." }
+        ],
+        "correctOptionId": "c"
+      },
+      {
+        "id": "q3",
+        "stem": "Qual KPI mede 'pedido entregue na quantidade certa, no prazo certo, completo e sem erros'?",
+        "options": [
+          { "id": "a", "label": "OTIF (On-Time In-Full)." },
+          { "id": "b", "label": "ROI." },
+          { "id": "c", "label": "NPS." },
+          { "id": "d", "label": "EBITDA." }
+        ],
+        "correctOptionId": "a"
+      },
+      {
+        "id": "q4",
+        "stem": "Sobre o fluxo de informação na supply chain:",
+        "options": [
+          { "id": "a", "label": "É opcional, basta o fluxo físico." },
+          { "id": "b", "label": "É essencial; pedidos, previsões e confirmações orientam o fluxo físico." },
+          { "id": "c", "label": "Aplica-se apenas ao e-commerce." },
+          { "id": "d", "label": "Não tem ligação com SAP/ERP." }
+        ],
+        "correctOptionId": "b"
+      },
+      {
+        "id": "q5",
+        "stem": "Sobre Lean Logistics:",
+        "options": [
+          { "id": "a", "label": "Foca em aumentar stock para garantir serviço." },
+          { "id": "b", "label": "Foca em eliminar desperdícios sem comprometer o nível de serviço." },
+          { "id": "c", "label": "É exclusivo da indústria automóvel." },
+          { "id": "d", "label": "Substitui completamente Six Sigma." }
+        ],
+        "correctOptionId": "b"
+      }
+    ]
+  }
+}

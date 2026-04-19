@@ -1,0 +1,146 @@
+// =============================================================================
+// Logistikon · Design Tokens
+//
+// Paleta restrita: pretos/cinzas + verde musgo + bege para texto.
+// Dark default; light disponível via [data-theme="light"].
+// Botões SEMPRE ghost (sem fill colorido) — ver styles globais.
+// =============================================================================
+
+// ---------- Tipografia (comum a ambos os temas) ---------------------------
+:root {
+  --lk-font-sans: 'Roboto', system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --lk-font-mono: 'Roboto Mono', 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  // Escala tipográfica em rem (1rem = 16px)
+  --lk-fs-12: 0.75rem;
+  --lk-fs-13: 0.8125rem;
+  --lk-fs-14: 0.875rem; // base UI
+  --lk-fs-15: 0.9375rem; // corpo de leitura
+  --lk-fs-16: 1rem;
+  --lk-fs-18: 1.125rem;
+  --lk-fs-20: 1.25rem;
+  --lk-fs-22: 1.375rem;
+  --lk-fs-28: 1.75rem;
+  --lk-fs-32: 2rem;
+
+  --lk-lh-tight: 1.25;
+  --lk-lh-base: 1.5;
+  --lk-lh-loose: 1.65;
+
+  --lk-fw-regular: 400;
+  --lk-fw-medium: 500;
+  --lk-fw-bold: 700;
+
+  // Layout
+  --lk-radius-sm: 4px;
+  --lk-radius-md: 6px;
+  --lk-radius-lg: 10px;
+
+  --lk-space-1: 0.25rem;
+  --lk-space-2: 0.5rem;
+  --lk-space-3: 0.75rem;
+  --lk-space-4: 1rem;
+  --lk-space-5: 1.25rem;
+  --lk-space-6: 1.5rem;
+  --lk-space-8: 2rem;
+  --lk-space-10: 2.5rem;
+  --lk-space-12: 3rem;
+
+  // Sombras (sutis em dark)
+  --lk-shadow-1: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --lk-shadow-2: 0 4px 16px rgba(0, 0, 0, 0.45);
+
+  // Larguras de shell
+  --lk-topbar-h: 48px;
+  --lk-sidebar-w: 248px;
+  --lk-sidebar-w-collapsed: 56px;
+  --lk-sideright-w: 300px;
+  --lk-content-max: 1100px;
+  /* Coluna de leitura: 100% do contentor (o .wrap já limita --lk-content-max). Antes: 72ch deixava faixa vazia à direita. */
+  --lk-prose-width: 100%;
+
+  /* Viewport Mermaid: caixa fixa (fit ao diagrama é feito no JS com Panzoom). */
+  --lk-mermaid-viewport-min-h: 240px;
+  --lk-mermaid-viewport-h: min(52vh, 600px);
+  --lk-mermaid-viewport-max-h: min(82vh, 920px);
+}
+
+// ---------- DARK (padrão) -------------------------------------------------
+:root,
+:root[data-theme='dark'] {
+  // Superfícies
+  --lk-bg-0: #0e0f0d;
+  --lk-bg-1: #161814;
+  --lk-bg-2: #1d1f1a;
+  --lk-bg-3: #242620;
+  --lk-bg-hover: #20231d;
+
+  // Bordas
+  --lk-border: #2a2e26;
+  --lk-border-strong: #3d4434;
+
+  // Texto (bege quente)
+  --lk-text: #e8e6dc;
+  --lk-text-muted: #9ea18f;
+  --lk-text-subtle: #6f7261;
+  --lk-text-inverse: #0e0f0d;
+
+  // Verde musgo (accent)
+  --lk-accent: #8ea96b;
+  --lk-accent-soft: #6f8a4f;
+  --lk-accent-faint: rgba(142, 169, 107, 0.12);
+
+  // Estados
+  --lk-success: #8fb37a;
+  --lk-warn: #c9a96b;
+  --lk-danger: #c47b6f;
+  --lk-info: #7e9ab2;
+
+  // Foco
+  --lk-focus-ring: 0 0 0 2px var(--lk-accent);
+
+  // Compatibilidade com classes legadas (--lk-brand-*)
+  --lk-brand-primary: var(--lk-accent);
+  --lk-brand-primary-hover: var(--lk-accent-soft);
+  --lk-brand-accent: var(--lk-accent);
+  --lk-brand-warn: var(--lk-warn);
+  --lk-radius-card: var(--lk-radius-md);
+  --lk-shadow-card: var(--lk-shadow-1);
+
+  color-scheme: dark;
+}
+
+// ---------- LIGHT (toggle) ------------------------------------------------
+:root[data-theme='light'] {
+  --lk-bg-0: #f7f6f1;
+  --lk-bg-1: #ffffff;
+  --lk-bg-2: #f1efe7;
+  --lk-bg-3: #e8e6db;
+  --lk-bg-hover: #ece9dc;
+
+  --lk-border: #d8d4c4;
+  --lk-border-strong: #b8b29c;
+
+  --lk-text: #1a1c17;
+  --lk-text-muted: #555a48;
+  --lk-text-subtle: #7c8170;
+  --lk-text-inverse: #ffffff;
+
+  --lk-accent: #5e7a3f;
+  --lk-accent-soft: #45602b;
+  --lk-accent-faint: rgba(94, 122, 63, 0.1);
+
+  --lk-success: #3f6a2e;
+  --lk-warn: #8a6a18;
+  --lk-danger: #9c3b2c;
+  --lk-info: #355d7c;
+
+  --lk-shadow-1: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --lk-shadow-2: 0 4px 16px rgba(0, 0, 0, 0.1);
+
+  --lk-brand-primary: var(--lk-accent);
+  --lk-brand-primary-hover: var(--lk-accent-soft);
+  --lk-brand-accent: var(--lk-accent);
+
+  color-scheme: light;
+}

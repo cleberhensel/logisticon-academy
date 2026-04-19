@@ -1,1 +1,6 @@
-web/
+.DS_Store
+
+# A SPA `web/` precisa estar versionada para o workflow do GitHub Pages
+# (.github/workflows/gh-pages.yml) conseguir correr `npm ci` e o build.
+# Os artefactos gerados de dentro de web/ (node_modules, dist, assets gerados)
+# estão cobertos pelo web/.gitignore.

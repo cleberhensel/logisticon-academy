@@ -1,0 +1,49 @@
+{
+  "name": "logistikon-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ng": "ng",
+    "sync:aulas": "node scripts/sync-aulas.mjs",
+    "build:static-db": "node scripts/build-static-db.mjs",
+    "prepare:assets": "npm run sync:aulas && npm run build:static-db",
+    "prestart": "npm run prepare:assets",
+    "start": "ng serve --project logistikon-web",
+    "prebuild": "npm run prepare:assets",
+    "build": "ng build --project logistikon-web",
+    "build:gh-pages": "npm run prepare:assets && ng build --project logistikon-web --base-href=/logisticon-academy/ && node scripts/post-build.mjs",
+    "lint": "ng lint",
+    "test": "ng test --watch=false"
+  },
+  "dependencies": {
+    "@angular/animations": "^18.2.0",
+    "@angular/common": "^18.2.0",
+    "@angular/compiler": "^18.2.0",
+    "@angular/core": "^18.2.0",
+    "@angular/forms": "^18.2.0",
+    "@angular/platform-browser": "^18.2.0",
+    "@angular/platform-browser-dynamic": "^18.2.0",
+    "@angular/router": "^18.2.0",
+    "@carbon/styles": "^1.71.0",
+    "@panzoom/panzoom": "^4.6.2",
+    "@stripe/stripe-js": "^4.7.0",
+    "carbon-components-angular": "^5.55.0",
+    "dompurify": "^3.1.7",
+    "marked": "^14.1.3",
+    "mermaid": "^11.14.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.6.0",
+    "zone.js": "~0.14.10"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^18.2.0",
+    "@angular/cli": "^18.2.0",
+    "@angular/compiler-cli": "^18.2.0",
+    "@types/dompurify": "^3.0.5",
+    "@types/node": "^20.0.0",
+    "glob": "^11.0.0",
+    "gray-matter": "^4.0.3",
+    "typescript": "~5.5.4"
+  }
+}

@@ -1,0 +1,9 @@
+[
+  { "id": "price_test_fundamentos", "trailSlug": "trilha-fundamentos-e-estrategia", "amountCents": 9900, "currency": "EUR" },
+  { "id": "price_test_dados", "trailSlug": "trilha-dados-analytics-logistica", "amountCents": 12900, "currency": "EUR" },
+  { "id": "price_test_tecnologia", "trailSlug": "trilha-tecnologia-e-sistemas", "amountCents": 14900, "currency": "EUR" },
+  { "id": "price_test_operacoes", "trailSlug": "trilha-operacoes-logisticas", "amountCents": 11900, "currency": "EUR" },
+  { "id": "price_test_melhoria", "trailSlug": "trilha-melhoria-continua-e-processos", "amountCents": 10900, "currency": "EUR" },
+  { "id": "price_test_estrategica", "trailSlug": "trilha-logistica-estrategica", "amountCents": 16900, "currency": "EUR" },
+  { "id": "price_test_automacao", "trailSlug": "trilha-automacao-e-digitalizacao", "amountCents": 15900, "currency": "EUR" }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "usr_demo",
+    "email": "demo@logistikon.test",
+    "passwordHash": "demo123",
+    "name": "Aluno Demo",
+    "emailVerifiedAt": "2026-04-19T10:00:00.000Z",
+    "roles": ["student"],
+    "createdAt": "2026-04-19T10:00:00.000Z"
+  },
+  {
+    "id": "usr_admin",
+    "email": "admin@logistikon.test",
+    "passwordHash": "admin123",
+    "name": "Admin POC",
+    "emailVerifiedAt": "2026-04-19T10:00:00.000Z",
+    "roles": ["admin"],
+    "createdAt": "2026-04-19T10:00:00.000Z"
+  }
+]

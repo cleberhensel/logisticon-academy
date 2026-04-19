@@ -1,0 +1,13 @@
+node_modules/
+.angular/
+dist/
+coverage/
+*.log
+.env
+.env.local
+
+# Activos gerados em build/prestart (sync-aulas + build-static-db)
+projects/logistikon-web/src/assets/aulas/
+projects/logistikon-web/src/assets/api/db.json
+
+.DS_Store
